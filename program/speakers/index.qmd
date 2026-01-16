@@ -1,0 +1,23 @@
+---
+pagetitle: "Speakers"
+page-layout: full
+listing:
+  - id: speakers
+    template: speakers.ejs
+    contents: speakers.yml
+---
+
+
+::: page-banner
+# Speakers
+:::
+
+:::::: grid
+
+::: {#speakers .g-col-12}
+:::
+
+<div>
+
+</div>
+::::::

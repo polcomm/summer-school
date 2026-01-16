@@ -1,0 +1,79 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "ICA Polcomm Summer School"
+  sidebar: false
+
+  navbar:
+    background: light
+    pinned: false
+    right:
+      - href: index.qmd
+        text: Home
+
+      - text: About
+        menu:
+          - text: About
+            href: about/about.qmd
+          - text: Organizing committee
+            href: about/organizers.qmd
+
+      - text: Program
+        menu:
+          - text: Schedule
+            href: program/schedule/
+          - text: Speakers
+            href: program/speakers/
+          - text: Participants
+            href: program/participants/
+
+      - text: Call for Participation
+        menu:
+          - text: Call for submissions
+            href: participation/call.qmd
+          - text: Key dates
+            href: participation/keydates/
+          - text: Registration
+            href: participation/register.qmd
+
+      - text: Contact
+        href: contact.qmd
+
+  page-footer:
+    left: "Designed by Isabella Gonçalves"
+    right:
+      - icon: globe
+        href: https://politicalcommunication.org/
+
+      - icon: linkedin
+        href: https://www.linkedin.com/company/polcomm-division
+
+      - icon: facebook
+        href: https://www.facebook.com/groups/338664022814/
+
+      # Bluesky (como imagem SVG — método estável)
+      - text: |
+          <a href="https://bsky.app/profile/polcomm.bsky.social"
+             target="_blank"
+             aria-label="Bluesky"
+             class="footer-icon">
+            <img src="/bluesky.svg"
+                 alt="Bluesky"
+                 style="height:1.1rem; vertical-align:-0.2em;">
+          </a>
+
+      - icon: envelope
+        href: mailto:politicalcommunication.org@gmail.com
+
+format:
+  html:
+    theme:
+      light: [cosmo, css/styles.scss]
+    page-layout: custom
+    toc: false
+
+editor: visual
+
+

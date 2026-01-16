@@ -1,0 +1,17 @@
+---
+page-layout: full
+listing:
+    template: speakers.ejs
+    contents: speakers.yml
+---
+
+
+::: {.page-banner}
+# Speakers
+:::
+
+::: grid
+
+
+<div></div>
+:::

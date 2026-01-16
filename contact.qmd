@@ -1,0 +1,23 @@
+---
+pagetitle: "Contact us"
+page-layout: full
+---
+
+
+::: {.page-banner}
+# Contact us
+:::
+
+::: grid
+
+::: {.g-col-6 .text_block}
+### Contact Us    
+
+Kindly email us at satrdayscityyear@satrdays.org
+
+:::
+
+::: g-col-6
+![](/img/user-conf.png){.img_block width="100%"}
+:::
+:::

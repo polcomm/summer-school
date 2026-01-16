@@ -1,0 +1,49 @@
+::: {#top-banner}
+![](/img/banner-img.jpg){width="100%"}
+:::
+
+---
+title: ""
+format:
+  html:
+    include-after-body:
+      - js/countdown.js
+      
+listing:
+  - id: countdown
+    template: countdown.ejs
+    contents: 
+      - datetime: July 7, 2026 23:59:00
+  - id: sponsors
+    template: about/sponsors/sponsors.ejs
+    contents: about/sponsors/sponsors.yml
+---
+
+::::::::: grid
+::: {#banner_small .g-col-12}
+:::
+
+::: {#countdown .g-col-12}
+:::
+
+::: {.g-col-6 .text_block}
+### About the ICA Political Communication Summer School
+
+The School addresses the main theoretical and empirical questions at the intersection of political communication, political science, and political sociology, with a special focus on the impact of communication factors, from television to the new digital media, on electoral participation, political attitudes, and voting behavior.
+
+### Location
+
+The Summer School will be taking place at the University of Leeds, between 8-12 July 2026.
+:::
+
+::: {.g-col-6 .img_margin}
+![](/img/mycity.jpg){.img_block width="100%"}
+:::
+
+::: {.g-col-12 .full_text_block}
+This is a full width text or image section
+:::
+
+::: {#sponsors .g-col-12}
+:::
+:::::::::
