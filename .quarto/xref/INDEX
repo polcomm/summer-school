@@ -1,0 +1,38 @@
+{
+  "index.qmd": {
+    "index.html": "1740e88f"
+  },
+  "about/about.qmd": {
+    "about.html": "d8296074"
+  },
+  "program/participants/index.qmd": {
+    "index.html": "a2a91511"
+  },
+  "participation/call.qmd": {
+    "call.html": "585f383b"
+  },
+  "participation/coc.qmd": {
+    "coc.html": "01a9f71b"
+  },
+  "participation/register.qmd": {
+    "register.html": "12c4d1b8"
+  },
+  "participation/keydates/index.qmd": {
+    "index.html": "64b74772"
+  },
+  "program/schedule/index.qmd": {
+    "index.html": "8643e253"
+  },
+  "about/organizers.qmd": {
+    "organizers.html": "dc4c4bd6"
+  },
+  "contact.qmd": {
+    "contact.html": "07cbba5b"
+  },
+  "about/sponsors/index.qmd": {
+    "index.html": "9f3d8c8f"
+  },
+  "program/speakers/index.qmd": {
+    "index.html": "5000e0b2"
+  }
+}

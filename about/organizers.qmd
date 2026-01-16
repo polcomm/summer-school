@@ -3,28 +3,24 @@ pagetitle: "Committee members"
 page-layout: full
 ---
 
-::: {.page-banner}
+::: page-banner
 # Committee Members
 :::
 
-::: grid
-
-
+::::: grid
 ::: {.g-col-6 .text_block}
 ### Organizing Committee
 
- - John Doe 1 _(ABC University)_
- - John Doe 2 _(XYZ University)_
-
+-   John Doe 1 *(ABC University)*
+-   John Doe 2 *(XYZ University)*
 
 ### Program Committee
 
- - John Doe 1 _(ABC University)_
- - John Doe 2 _(XYZ University)_
-
+-   John Doe 1 *(ABC University)*
+-   John Doe 2 *(XYZ University)*
 :::
 
 ::: g-col-6
 ![](/img/conf-image.jpg){.img_block width="100%"}
 :::
-:::
+:::::

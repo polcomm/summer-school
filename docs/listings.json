@@ -1,18 +1,10 @@
 [
   {
-    "listing": "/program/schedule/index.html",
+    "listing": "/program/speakers/index.html",
     "items": []
   },
   {
-    "listing": "/index.html",
-    "items": []
-  },
-  {
-    "listing": "/about/sponsors/index.html",
-    "items": []
-  },
-  {
-    "listing": "/index2.html",
+    "listing": "/program/participants/index.html",
     "items": []
   },
   {
@@ -20,11 +12,15 @@
     "items": []
   },
   {
-    "listing": "/program/speakers/index.html",
+    "listing": "/about/sponsors/index.html",
     "items": []
   },
   {
-    "listing": "/program/participants/index.html",
+    "listing": "/index.html",
+    "items": []
+  },
+  {
+    "listing": "/program/schedule/index.html",
     "items": []
   }
 ]
