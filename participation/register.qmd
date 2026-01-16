@@ -1,0 +1,21 @@
+---
+page-layout: full
+---
+
+::: {.page-banner}
+# Registration
+:::
+
+::: grid
+
+::: {.g-col-6 .text_block}
+### Registration
+
+Please register for the conference at: [satrdays.org](https://satrdays.org)
+:::
+
+::: {.g-col-6 .img_margin}
+![](/img/background2.jpg){.img_block width="100%"}
+:::
+<div></div>
+:::
