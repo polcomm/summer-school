@@ -236,37 +236,39 @@ footer.footer .nav-footer img {
 }
 
 
+
 /* =========================================================
-   RESPONSIVE
+   GLOBAL MOBILE COLUMN FIX
    ========================================================= */
 
 @media (max-width: 768px) {
 
-  .img_block {
-    min-width: 100%;
-    min-height: auto;
+  /* Quarto / Bootstrap / generic grids */
+  .grid,
+  .columns,
+  .row {
+    display: block !important;
   }
 
-  #countdown li {
-    font-size: 1em;
-    padding: 0.6em;
+  /* Any column */
+  .column,
+  [class*="col-"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: none !important;
   }
 
-  .countdown_date {
-    font-size: 1.8em;
+  /* Ensure vertical flow */
+  .column,
+  [class*="col-"] {
+    margin-bottom: 1rem;
   }
 
-  .sponsorsFooter ul {
-    justify-content: center;
-    gap: 24px;
-  }
-
-  .sponsorsFooter li {
-    flex: 0 0 45%;
-  }
-
-  .sponsorsFooter .sblogos__img {
-    height: 44px;
-    max-width: 140px;
+  /* Images inside columns */
+  .column img,
+  [class*="col-"] img {
+    width: 100%;
+    height: auto;
+    margin-top: 0.5rem;
   }
 }
