@@ -12,39 +12,25 @@ page-layout: full
 ::: {.g-col-6 .text_block}
 ### Call for submissions
 
-We invite R users and developers from around our region and the world to submit abstracts to contribute to our satRday conference. We expect a wide range of exciting talks, innovative lightning talks, horizon-expanding discussion panels, and productive incubators.
+The Political Communication Division of the International Communication Association (ICA) calls for applications for its co-organized 9th edition of the International Summer School in Political Communication that will be held 8-13 July 2026 at the University of Leeds. 
 
-We welcome submissions related to R from any disciplinary background, whether the work is computational, empirical, or theoretical in nature. Regardless of your career level, you are encouraged to submit your work.
+The ICA Political Communication Summer School addresses theoretical and empirical questions at the intersection of political communication, with a special focus on the relationship between political communication, media coverage, and political participation and democracy. This year’s theme is: “Political Communication and Conflict.” Lecturers will address key concepts and phenomena vis-à-vis a host of contemporary contexts, including elections and war. They will speak to the construction and processing of mediated (conflict-based) content and their implications for citizens and society at large.
 
-### Suggested Topics
+Building on the experience of the last 15 years, the 2026 Summer School offers a unique opportunity for 30 PhD candidates and early-career academics in communication, sociology, psychology and political science:
 
--   Data visualization
--   Data mining, Machine learning, Deep Learning and AI
--   Databases / Data management
--   Statistical models
--   Spatial Analysis
--   Reproducible Research
--   Teaching R / R in Teaching
--   Web Applications (Shiny, Dashboards)
--   Efficient programming
--   R in production
--   Community and Outreach
--   Bioinformatics / Biomedical or health informatics
--   Biostatistics / Epidemiology
--   Economics / Finance / Insurance
--   Social sciences
--   Environmental sciences
--   Many more
+- to attend an intensive, six-day program that consists of lectures, master classes, paper presentations and mentoring sessions, and
+- to build long-lasting personal and scholarly relations in a celebrated friendly and productive environment.
 
-### More Text
+Participation will be on a competitive basis. Candidates interested in applying to the Milan Summer School should submit a three-page research proposal or an extended abstract of a research paper on issues broadly related to political communication. Submissions should include the name, email address, institutional affiliation, a brief bio (max. 200 words) mentioning main research interests and ongoing projects, and a recommendation letter. An international selection committee will review the applications.
 
-Provide more information on category and kind of submissions that are to be expected.
+### Key Dates and Fees
 
-### Submission Types
+- Application deadline: 29 February
+- Notification of acceptance: 09 April
+- Registration deadline: 24 May
+ 
+Enrollment fee: € 900 (covers accommodation, lunches, welcome and farewell dinners). A number of travel grants are available. See how to apply here.
 
--   Session Presentations (typically 20 mins long)
--   Lightning Talk (typically 10 mins long)
--   Panel Discussion (typically 30 mins long)
 :::
 
 ::: {.g-col-6 .img_margin}

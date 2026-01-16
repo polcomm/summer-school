@@ -11,7 +11,7 @@ page-layout: full
 ::: {.g-col-6 .text_block}
 ### Registration
 
-Please register for the conference at: [satrdays.org](https://satrdays.org)
+Please register for the conference at: [politicalcommunication.org](https://politicalcommunication.org)
 :::
 
 ::: {.g-col-6 .img_margin}
