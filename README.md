@@ -6,8 +6,6 @@ This is a document for teaching updating the ICA Polcomm Summer School template.
 
 To upload this template, install R and [Quarto](https://quarto.org/docs/get-started/), and then clone this repository or create a new repository using this repository as a template (see screenshot below)
 
-![image](https://github.com/satRdays/quarto-satrdays-template/assets/11357251/f61229ae-29a2-468d-862d-3cddd96813da)
-
 If you use RStudio as your IDE, typing `quarto preview` in the terminal starts the preview server and shows the home page on your browser.
 
 To render the website, type `quarto render` in the terminal and all the `.qmd` files are rendered to `.html` files. The HTML files that are produced after rendering the Quarto documents are located in the `docs` folder. 
@@ -76,4 +74,5 @@ It is possible to add multiple listings on one page (e.g. having speakers, spons
 ### Deployment
 
 The resulting output after `quarto render` is a bunch of static files that are located in the `docs` folder. These files could be deployed using GitHub Pages or Netlify or on any other web server of the users' choice.
+
 
