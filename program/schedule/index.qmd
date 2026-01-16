@@ -22,7 +22,7 @@ Please note that all session times are listed below in UTC.
 :::
 
 ::: g-col-6
-![](/img/conf-image.jpg){.img_block width="99%"}
+![](/img/room3.jpg){.img_block width="99%"}
 :::
 
 

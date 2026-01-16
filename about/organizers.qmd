@@ -25,6 +25,6 @@ page-layout: full
 :::
 
 ::: g-col-6
-![](/img/user-conf.png){.img_block width="100%"}
+![](/img/conf-image.jpg){.img_block width="100%"}
 :::
 :::

@@ -48,7 +48,9 @@ Provide more information on category and kind of submissions that are to be expe
 :::
 
 ::: {.g-col-6 .img_margin}
-![](/img/user-conf.png){.img_block width="99%"}
+![](/img/room.jpg){.img_block width="99%"}
+
+![](/img/speaker.jpg){.img_block width="99%"}
 :::
 
 <div></div>

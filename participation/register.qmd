@@ -15,7 +15,7 @@ Please register for the conference at: [satrdays.org](https://satrdays.org)
 :::
 
 ::: {.g-col-6 .img_margin}
-![](/img/background2.jpg){.img_block width="100%"}
+![](/img/cocktail.jpg){.img_block width="100%"}
 :::
 <div></div>
 :::

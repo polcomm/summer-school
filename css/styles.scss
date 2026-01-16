@@ -132,20 +132,22 @@ body {
    ========================================================= */
 
 .text_block {
-  padding: 20px;
+  padding: 24px;
   font-size: 0.95rem;
-  background: rgba($primary, .06);
+  background-color: #eaf4f1; /* VERDE claro real */
   margin-left: 5%;
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
 .full_text_block {
-  padding: 20px;
+  padding: 36px;
   font-size: 0.95rem;
-  background: rgba($primary, .06);
+  background-color: #eaf4f1; /* VERDE claro real */
   margin: 0 2.5%;
-  border-radius: 5px;
+  border-radius: 8px;
 }
+
+
 
 
 /* =========================================================
@@ -187,34 +189,36 @@ footer.footer .nav-footer {
 }
 
 /* =========================================================
-   FOOTER — TUDO PRETO
+   FOOTER 
    ========================================================= */
 
 footer.footer {
   color: #000000;
 }
 
-/* Texto do footer */
+/* Text footer */
 footer.footer .nav-footer {
   color: #000000;
 }
 
-/* Ícones do Quarto (globe, linkedin, facebook, envelope) */
+/* Icons */
 footer.footer .nav-footer a,
 footer.footer .nav-footer i {
   color: #000000 !important;
 }
 
-/* Hover (opcional: continua preto) */
+/* Hover */
 footer.footer .nav-footer a:hover,
 footer.footer .nav-footer a:hover i {
   color: #000000 !important;
 }
 
-/* Bluesky como imagem SVG */
+/* Bluesky */
 footer.footer .nav-footer img {
   filter: grayscale(100%) brightness(0%);
 }
+
+/*  Footer and Sponsor   */
 
 .sponsorsFooter {
   text-align: left;
@@ -225,7 +229,7 @@ footer.footer .nav-footer img {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 56px;        /* mais espaço = mais destaque */
+  gap: 56px; /* mais espaço = mais destaque */
   list-style: none;
   padding: 0;
   margin: 0;
@@ -242,21 +246,11 @@ footer.footer .nav-footer img {
 }
 
 .sponsorsFooter .sblogos__img {
-  height: 70px;
+  height: 56px;
   width: auto;
   object-fit: contain;
 }
 
-
-/* Container dos speakers */
-.sponsorsFooter ul {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 👈 3 por linha */
-  gap: 48px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
 
 /* Cada speaker */
 .sponsorsFooter li {

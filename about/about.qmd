@@ -2,30 +2,66 @@
 page-layout: full
 ---
 
-<!-- BANNER DA PÁGINA INTERNA -->
-
 ::: page-banner
 # About ICA Political Communication Summer School
 :::
 
 :::::: grid
-::: {.g-col-6 .text_block}
-### What are satRdays?
 
-satRdays are free/cheap accessible R conferences being organised by the community for the community. They happen all over the globe, and are organised by local community leaders to help and grow the local community.
+::: {.g-col-6}
 
-There is a big emphasis on making these event accessible – by not requiring time off work, by not costing more than a days wages, by being supportive of new community members or leaders.
+::: {.content-block}
 
-### satRday MyCity
+### The Lectures
 
-satRday MyCity will be taking place at MyCity, MyCountry on the 21st September, 2026.
+The School addresses the main theoretical and empirical questions at the intersection of political communication, political science, and political sociology, with a special focus on the relationship between political communication, media, political participation and democracy.
+
 :::
 
-::: {.g-col-6 .img_margin}
-![](/img/user-conf.png){.img_block width="100%"}
+::: {.content-block}
+
+### The Faculty
+
+The 2024 Faculty gathers internationally renowned academics to engage with students. Confirmed in-person speakers include:  
+Scott Althaus (U of Illinois), Michael Chan (Chinese U of Hong Kong),  
+Kimberly Gross (George Washington U), Kate Kenski (U of Arizona),  
+Patricia Moy (U of Washington), Eike Mark Rinke (Leeds U),  
+Sebastián Valenzuela (U Católica de Chile), Karin Wahl-Jorgensen (U of Cardiff),  
+Brian Weeks (U of Michigan), Moran Yarchi (Reichman U).
+
 :::
 
-::: {.g-col-12 .full_text_block}
-This is a full width text or image section.
+::: {.content-block}
+
+### The Students
+
+Participants come from around the globe; countries represented at previous Summer Schools include USA, Canada, Colombia, Brazil, UK, Norway, Sweden, Finland, Latvia, Russia, Poland, Germany, The Netherlands, France, Spain, Portugal, Italy, the Czech Republic, Slovakia, Serbia, Turkey, Pakistan, Australia, New Zealand, South Africa among others.
+
 :::
+
+:::
+
+::: {.g-col-6}
+
+::: {.image-block}
+![](/img/participants.jpg){width="100%"}
+:::
+
+::: {.image-block}
+![](/img/room.jpg){width="100%"}
+:::
+
+:::
+
 ::::::
+
+::: {.full_text_block}
+
+### A Successful Experience
+
+Building on the experience of the last 15 years, the 2024 Summer School offers a unique opportunity for 30 PhD candidates and early career academics in communication, sociology, psychology and political science:
+
+1. To attend an intensive, six-day program that consists of lectures, master classes, paper presentations and mentoring sessions, and  
+2. to build long-lasting personal and scholarly relations in a celebrated friendly and productive environment.
+
+:::
