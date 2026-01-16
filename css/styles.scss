@@ -2,8 +2,11 @@
 
 $body-bg: white;
 $primary: #0a3263;
-$countdown-bg: rgba($primary, .15);
-$countdown-color: #5d5d76;
+
+/* Unified dark sections (countdown + footer) */
+$dark-bg: #0f3d2e;
+$dark-text: #ffffff;
+$dark-accent: #22b473;
 
 
 /*-- scss:rules --*/
@@ -20,7 +23,7 @@ body {
 
 
 /* =========================================================
-   HOME — BANNER ORIGINAL (SEM ALTERAR DESIGN)
+   HOME — BANNER ORIGINAL
    ========================================================= */
 
 #top-banner {
@@ -36,8 +39,7 @@ body {
 
 
 /* =========================================================
-   PÁGINAS INTERNAS — BANNER MANUAL
-   (NÃO AFETA A HOME)
+   PÁGINAS INTERNAS — BANNER
    ========================================================= */
 
 .page-banner {
@@ -55,7 +57,7 @@ body {
 
 
 /* =========================================================
-   NAVBAR — PRETA COM TEXTO BRANCO (QUARTO)
+   NAVBAR — PRETA
    ========================================================= */
 
 .navbar {
@@ -67,17 +69,13 @@ body {
   min-height: 50px;
 }
 
-#quarto-header .navbar-brand {
-  color: #ffffff !important;
-}
-
+#quarto-header .navbar-brand,
 #quarto-header .navbar-nav .nav-link {
   color: #ffffff !important;
 }
 
 #quarto-header .navbar-nav .nav-link.active,
 #quarto-header .navbar-nav .nav-link:hover {
-  color: #ffffff !important;
   border-bottom: 2px solid #ffffff;
 }
 
@@ -88,7 +86,7 @@ body {
 
 
 /* =========================================================
-   GRID / CONTENT (ORIGINAL)
+   GRID / CONTENT
    ========================================================= */
 
 .grid {
@@ -101,15 +99,14 @@ body {
 
 
 /* =========================================================
-   COUNTDOWN (ORIGINAL)
+   COUNTDOWN — SAME COLOR AS FOOTER
    ========================================================= */
 
 #listing-countdown {
-  background: $countdown-bg;
-  color: $countdown-color;
+  background: $dark-bg;
+  color: $dark-text;
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 0.5em;
+  margin: 0 0 0.5em 0;
 }
 
 #countdown li {
@@ -117,24 +114,29 @@ body {
   font-size: 1.2em;
   list-style-type: none;
   padding: 0.8em;
-  border-right: 1px solid rgba($primary, .18);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#countdown li:last-child {
+  border-right: none;
 }
 
 .countdown_date {
   display: block;
   font-size: 2.3em;
   font-weight: bold;
+  color: $dark-accent;
 }
 
 
 /* =========================================================
-   TEXT BLOCKS (ORIGINAL)
+   TEXT BLOCKS
    ========================================================= */
 
 .text_block {
   padding: 24px;
   font-size: 0.95rem;
-  background-color: #eaf4f1; /* VERDE claro real */
+  background-color: #eaf4f1;
   margin-left: 5%;
   border-radius: 6px;
 }
@@ -142,16 +144,14 @@ body {
 .full_text_block {
   padding: 36px;
   font-size: 0.95rem;
-  background-color: #eaf4f1; /* VERDE claro real */
+  background-color: #eaf4f1;
   margin: 0 2.5%;
   border-radius: 8px;
 }
 
 
-
-
 /* =========================================================
-   IMAGES (ORIGINAL)
+   IMAGES
    ========================================================= */
 
 .img_block {
@@ -167,16 +167,77 @@ body {
 
 
 /* =========================================================
-   FOOTER (ORIGINAL)
+   FOOTER — SAME COLOR AS COUNTDOWN
    ========================================================= */
 
+footer.footer {
+  background-color: $dark-bg;
+  color: $dark-text;
+}
+
 footer.footer .nav-footer {
-  background: rgba($primary, .18);
+  background-color: $dark-bg;
+  color: $dark-text;
+}
+
+footer.footer .nav-footer a,
+footer.footer .nav-footer i {
+  color: $dark-text !important;
+}
+
+footer.footer .nav-footer a:hover,
+footer.footer .nav-footer a:hover i {
+  color: $dark-accent !important;
+}
+
+footer.footer .nav-footer img {
+  filter: brightness(100%);
 }
 
 
 /* =========================================================
-   RESPONSIVE (ORIGINAL)
+   SPONSORS / SPEAKERS
+   ========================================================= */
+
+.sponsorsFooter {
+  padding: 32px 0;
+}
+
+.sponsorsFooter ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 56px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sponsorsFooter li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.sponsorsFooter .sblogos__img {
+  height: 56px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Speaker images */
+.sponsorsFooter img {
+  width: 180px;
+  height: 180px;
+  border-radius: 40%;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
    ========================================================= */
 
 @media (max-width: 768px) {
@@ -186,85 +247,26 @@ footer.footer .nav-footer {
     min-height: auto;
   }
 
-}
+  #countdown li {
+    font-size: 1em;
+    padding: 0.6em;
+  }
 
-/* =========================================================
-   FOOTER 
-   ========================================================= */
+  .countdown_date {
+    font-size: 1.8em;
+  }
 
-footer.footer {
-  color: #000000;
-}
+  .sponsorsFooter ul {
+    justify-content: center;
+    gap: 24px;
+  }
 
-/* Text footer */
-footer.footer .nav-footer {
-  color: #000000;
-}
+  .sponsorsFooter li {
+    flex: 0 0 45%;
+  }
 
-/* Icons */
-footer.footer .nav-footer a,
-footer.footer .nav-footer i {
-  color: #000000 !important;
-}
-
-/* Hover */
-footer.footer .nav-footer a:hover,
-footer.footer .nav-footer a:hover i {
-  color: #000000 !important;
-}
-
-/* Bluesky */
-footer.footer .nav-footer img {
-  filter: grayscale(100%) brightness(0%);
-}
-
-/*  Footer and Sponsor   */
-
-.sponsorsFooter {
-  text-align: left;
-  padding: 32px 0;
-}
-
-.sponsorsFooter ul {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 56px; /* mais espaço = mais destaque */
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.sponsorsFooter li {
-  display: flex;
-  align-items: center;
-}
-
-.sponsorsFooter .sblogos__link {
-  display: inline-flex;
-  align-items: center;
-}
-
-.sponsorsFooter .sblogos__img {
-  height: 56px;
-  width: auto;
-  object-fit: contain;
-}
-
-
-/* Cada speaker */
-.sponsorsFooter li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;   /* centraliza conteúdo do card */
-  text-align: center;
-}
-
-/* Imagem do speaker */
-.sponsorsFooter img {
-  width: 180px;
-  height: 180px;
-  border-radius: 40%;
-  object-fit: cover;
-  margin-bottom: 12px;
+  .sponsorsFooter .sblogos__img {
+    height: 44px;
+    max-width: 140px;
+  }
 }
