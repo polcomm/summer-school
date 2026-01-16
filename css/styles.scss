@@ -1,0 +1,276 @@
+/*-- scss:defaults --*/
+
+$body-bg: white;
+$primary: #0a3263;
+$countdown-bg: rgba($primary, .15);
+$countdown-color: #5d5d76;
+
+
+/*-- scss:rules --*/
+
+/* =========================================================
+   BASE
+   ========================================================= */
+
+body {
+  background: $body-bg;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* =========================================================
+   HOME — BANNER ORIGINAL (SEM ALTERAR DESIGN)
+   ========================================================= */
+
+#top-banner {
+  margin: 0;
+  padding: 0;
+}
+
+#top-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+/* =========================================================
+   PÁGINAS INTERNAS — BANNER MANUAL
+   (NÃO AFETA A HOME)
+   ========================================================= */
+
+.page-banner {
+  background-image: url("img/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 4rem 2rem;
+}
+
+.page-banner h1 {
+  color: #000000;
+  margin: 0;
+}
+
+
+/* =========================================================
+   NAVBAR — PRETA COM TEXTO BRANCO (QUARTO)
+   ========================================================= */
+
+.navbar {
+  --bs-navbar-padding-y: 0.1rem;
+}
+
+#quarto-header nav {
+  background: #000000 !important;
+  min-height: 50px;
+}
+
+#quarto-header .navbar-brand {
+  color: #ffffff !important;
+}
+
+#quarto-header .navbar-nav .nav-link {
+  color: #ffffff !important;
+}
+
+#quarto-header .navbar-nav .nav-link.active,
+#quarto-header .navbar-nav .nav-link:hover {
+  color: #ffffff !important;
+  border-bottom: 2px solid #ffffff;
+}
+
+.navbar ul.dropdown-menu {
+  margin-top: 5px;
+  padding-bottom: 0;
+}
+
+
+/* =========================================================
+   GRID / CONTENT (ORIGINAL)
+   ========================================================= */
+
+.grid {
+  margin-top: 0 !important;
+}
+
+#quarto-content > .grid {
+  padding-top: 10px !important;
+}
+
+
+/* =========================================================
+   COUNTDOWN (ORIGINAL)
+   ========================================================= */
+
+#listing-countdown {
+  background: $countdown-bg;
+  color: $countdown-color;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+#countdown li {
+  display: inline-block;
+  font-size: 1.2em;
+  list-style-type: none;
+  padding: 0.8em;
+  border-right: 1px solid rgba($primary, .18);
+}
+
+.countdown_date {
+  display: block;
+  font-size: 2.3em;
+  font-weight: bold;
+}
+
+
+/* =========================================================
+   TEXT BLOCKS (ORIGINAL)
+   ========================================================= */
+
+.text_block {
+  padding: 20px;
+  font-size: 0.95rem;
+  background: rgba($primary, .06);
+  margin-left: 5%;
+  border-radius: 5px;
+}
+
+.full_text_block {
+  padding: 20px;
+  font-size: 0.95rem;
+  background: rgba($primary, .06);
+  margin: 0 2.5%;
+  border-radius: 5px;
+}
+
+
+/* =========================================================
+   IMAGES (ORIGINAL)
+   ========================================================= */
+
+.img_block {
+  min-height: 350px;
+  min-width: 400px;
+  border-radius: 5px;
+}
+
+.img_margin {
+  margin-right: 5%;
+  align-items: center;
+}
+
+
+/* =========================================================
+   FOOTER (ORIGINAL)
+   ========================================================= */
+
+footer.footer .nav-footer {
+  background: rgba($primary, .18);
+}
+
+
+/* =========================================================
+   RESPONSIVE (ORIGINAL)
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .img_block {
+    min-width: 100%;
+    min-height: auto;
+  }
+
+}
+
+/* =========================================================
+   FOOTER — TUDO PRETO
+   ========================================================= */
+
+footer.footer {
+  color: #000000;
+}
+
+/* Texto do footer */
+footer.footer .nav-footer {
+  color: #000000;
+}
+
+/* Ícones do Quarto (globe, linkedin, facebook, envelope) */
+footer.footer .nav-footer a,
+footer.footer .nav-footer i {
+  color: #000000 !important;
+}
+
+/* Hover (opcional: continua preto) */
+footer.footer .nav-footer a:hover,
+footer.footer .nav-footer a:hover i {
+  color: #000000 !important;
+}
+
+/* Bluesky como imagem SVG */
+footer.footer .nav-footer img {
+  filter: grayscale(100%) brightness(0%);
+}
+
+.sponsorsFooter {
+  text-align: left;
+  padding: 32px 0;
+}
+
+.sponsorsFooter ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 56px;        /* mais espaço = mais destaque */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sponsorsFooter li {
+  display: flex;
+  align-items: center;
+}
+
+.sponsorsFooter .sblogos__link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.sponsorsFooter .sblogos__img {
+  height: 84px;
+  width: auto;
+  object-fit: contain;
+}
+
+
+/* Container dos speakers */
+.sponsorsFooter ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 👈 3 por linha */
+  gap: 48px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Cada speaker */
+.sponsorsFooter li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* centraliza conteúdo do card */
+  text-align: center;
+}
+
+/* Imagem do speaker */
+.sponsorsFooter img {
+  width: 180px;
+  height: 180px;
+  border-radius: 40%;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
