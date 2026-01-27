@@ -4,7 +4,7 @@ This is a document for teaching updating the ICA Polcomm Summer School template.
 
 ## Installation
 
-To upload this template, install R and [Quarto](https://quarto.org/docs/get-started/), and then clone this repository or create a new repository using this repository as a template (see screenshot below)
+To upload this template, install R and [Quarto](https://quarto.org/docs/get-started/), and then clone this repository or create a new repository using this repository as a template.
 
 If you use RStudio as your IDE, typing `quarto preview` in the terminal starts the preview server and shows the home page on your browser.
 
@@ -74,5 +74,6 @@ It is possible to add multiple listings on one page (e.g. having speakers, spons
 ### Deployment
 
 The resulting output after `quarto render` is a bunch of static files that are located in the `docs` folder. These files could be deployed using GitHub Pages or Netlify or on any other web server of the users' choice.
+
 
 
