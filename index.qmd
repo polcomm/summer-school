@@ -29,7 +29,8 @@ listing:
 ::: {.g-col-6 .text_block}
 ### About the ICA Political Communication Summer School
 
-The School addresses the main theoretical and empirical questions in political communication, with a faculty lecture focus on democratic citizenship, democratic backsliding and resilience, AI, digital media and misinformation, civic engagement, and polarization. Students who are working on political communication studies are invited to apply. For themes in political communication covered by our division, see the ICA Division homepage. 
+The School addresses the main theoretical and empirical questions in political communication, with a faculty lecture focus on democratic citizenship, democratic backsliding and resilience, AI, digital media and misinformation, civic engagement, and polarization. Students who are working on political communication studies are invited to apply. For themes in political communication covered by our division, see the [ICA Political Communication Division homepage](https://www.icahdq.org/group/political).
+
 
 ### Location
 
