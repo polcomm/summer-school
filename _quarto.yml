@@ -22,21 +22,21 @@ website:
 
       - text: Program
         menu:
-          - text: Schedule
-            href: program/schedule/
+          #- text: Schedule
+          #  href: program/schedule/
           - text: Speakers
             href: program/speakers/
-          - text: Participants
-            href: program/participants/
+          #- text: Participants
+          #  href: program/participants/
 
       - text: Call for Participation
         menu:
           - text: Call for submissions
             href: participation/call.qmd
-          - text: Key dates
-            href: participation/keydates/
-          - text: Registration
-            href: participation/register.qmd
+          #- text: Key dates
+          #  href: participation/keydates/
+          #- text: Registration
+          #  href: participation/register.qmd
 
       - text: Contact
         href: contact.qmd

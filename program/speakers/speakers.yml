@@ -1,30 +1,60 @@
-    - name: Kate Kenski
-      affiliation: The University of Arizona
-      href: https://sgpp.arizona.edu/person/kate-kenski
-      thumbnail: img/kate.jpg
+    - name: Christian Baden
+      affiliation: The Hebrew University of Jerusalem
+      href: https://christian-baden.huji.ac.il/
+      thumbnail: img/baden.jpg
       social: 
-      - website: https://politicalcommunication.org/
-      - github: https://politicalcommunication.org/
-      - twitter: https://politicalcommunication.org/
-      - linkedin: https://politicalcommunication.org/
-      - mastodon: https://politicalcommunication.org/
-    - name: Example Name
-      affiliation: ICA
-      href: https://example.com
-      thumbnail: img/user.png
+      - website: https://christian-baden.huji.ac.il/
+    - name: Dam Hee Kim
+      affiliation: Korea University
+      href: https://damheekim.wixsite.com/website
+      thumbnail: img/dam.jpg
       social: 
-      - website: https://politicalcommunication.org/
-      - github: https://politicalcommunication.org/
-      - twitter: https://politicalcommunication.org/
-      - linkedin: https://politicalcommunication.org/
-      - mastodon: https://politicalcommunication.org/
-    - name: Example Name
-      affiliation: ICA
-      href: https://example.com
-      thumbnail: img/user.png
+      - website: https://damheekim.wixsite.com/website
+    - name: Regina Lawrence
+      affiliation: University of Oregon
+      href: https://journalism.uoregon.edu/directory/faculty-and-staff/all/rgl
+      thumbnail: img/regina.jpg
       social: 
-      - website: https://politicalcommunication.org/
-      - github: https://politicalcommunication.org/
-      - twitter: https://politicalcommunication.org/
-      - linkedin: https://politicalcommunication.org/
-      - mastodon: https://politicalcommunication.org/
+      - website: https://journalism.uoregon.edu/directory/faculty-and-staff/all/rgl
+    - name: Joerg Matthes
+      affiliation: University of Vienna
+      href: https://advertisingresearch.univie.ac.at/team/joerg-matthes/
+      thumbnail: img/joerg.jpg
+      social: 
+      - website: https://advertisingresearch.univie.ac.at/team/joerg-matthes/
+    - name: Patricia Moy
+      affiliation: University of Washington
+      href: https://nwccu.org/commissioners/commissioner-directory/dr-patricia-moy/
+      thumbnail: img/patricia.jpg
+      social: 
+      - website: https://nwccu.org/commissioners/commissioner-directory/dr-patricia-moy/
+    - name: Chris Fei Shen
+      affiliation: City University of Hong Kong
+      href: https://www.cityu.edu.hk/com/Profile.aspx?u=feishen
+      thumbnail: img/chris.jpg
+      social: 
+      - website: https://www.cityu.edu.hk/com/Profile.aspx?u=feishen
+    - name: Lone Sorensen
+      affiliation: University of Leeds
+      href: https://ahc.leeds.ac.uk/media/staff/3126/dr-lone-sorensen
+      thumbnail: img/lone.jpg
+      social: 
+      - website: https://ahc.leeds.ac.uk/media/staff/3126/dr-lone-sorensen
+    - name: Talia Stroud
+      affiliation: University of Texas at Austin
+      href: https://commstudies.utexas.edu/faculty/natalie-jomini-stroud
+      thumbnail: img/talia.jpg
+      social: 
+      - website: https://commstudies.utexas.edu/faculty/natalie-jomini-stroud
+    - name: Sebastián Valenzuela
+      affiliation: Pontificia Universidad Católica de Chile
+      href: https://comunicaciones.uc.cl/facultad/personas/sebastian-valenzuela-leighton/
+      thumbnail: img/sebastian.jpg
+      social: 
+      - website: https://comunicaciones.uc.cl/facultad/personas/sebastian-valenzuela-leighton/
+    - name: Claes de Vreese
+      affiliation: University of Amsterdam
+      href: https://www.uva.nl/en/profile/v/r/c.h.devreese/c.h.devreese.html
+      thumbnail: img/claes.jpg
+      social: 
+      - website: https://www.uva.nl/en/profile/v/r/c.h.devreese/c.h.devreese.html

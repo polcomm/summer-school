@@ -22,12 +22,8 @@ The School addresses the main theoretical and empirical questions at the interse
 
 ### The Faculty
 
-The 2024 Faculty gathers internationally renowned academics to engage with students. Confirmed in-person speakers include:  
-Scott Althaus (U of Illinois), Michael Chan (Chinese U of Hong Kong),  
-Kimberly Gross (George Washington U), Kate Kenski (U of Arizona),  
-Patricia Moy (U of Washington), Eike Mark Rinke (Leeds U),  
-Sebastián Valenzuela (U Católica de Chile), Karin Wahl-Jorgensen (U of Cardiff),  
-Brian Weeks (U of Michigan), Moran Yarchi (Reichman U).
+The 2026 Faculty gathers internationally renowned academics to engage with students. Confirmed in-person speakers include: Dr. Christian Baden (The Hebrew University of Jerusalem), Dr. Dam Hee Kim (Korea University), Dr. Regina Lawrence (University of Oregon), Dr. Joerg Matthes (University of Vienna), Dr. Patricia Moy (University of Washington), Dr. Chris Fei Shen (City University of Hong Kong), Dr. Lone Sorensen (University of Leeds), Dr. Talia Stroud (University of Texas at Austin), Dr. Sebastián Valenzuela (Pontificia Universidad Católica de Chile), Dr. Claes de Vreese (University of Amsterdam).
+
 
 :::
 
@@ -48,7 +44,7 @@ Participants come from around the globe; countries represented at previous Summe
 :::
 
 ::: {.image-block}
-![](/img/room.jpg){width="100%"}
+![](/img/students-img.jpg){width="100%"}
 :::
 
 :::

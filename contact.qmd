@@ -13,11 +13,11 @@ page-layout: full
 ::: {.g-col-6 .text_block}
 ### Contact Us    
 
-Kindly email us at politicalcommunication.org@gmail.com
+In case of questions, kindly email the organizer, Eike Rinke ([E.M.Rinke@leeds.ac.uk](mailto:E.M.Rinke@leeds.ac.uk)).
 
 :::
 
 ::: g-col-6
-![](/img/mycity.jpg){.img_block width="100%"}
+![](/img/leeds.jpg){.img_block width="100%"}
 :::
 :::

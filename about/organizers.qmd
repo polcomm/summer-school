@@ -11,16 +11,46 @@ page-layout: full
 ::: {.g-col-6 .text_block}
 ### Organizing Committee
 
--   John Doe 1 *(ABC University)*
--   John Doe 2 *(XYZ University)*
+<ul class="green-speakers">
+  <li class="speaker-card">
+    <a href="https://comm.arizona.edu/person/kate-kenski" target="_blank" rel="noopener">
+      <img src="/img/kate.jpg" alt="Kate Kenski">
+      <strong>Kate Kenski</strong>
+    </a>
+    <span>The University of Arizona</span>
+  </li>
 
-### Program Committee
+  <li class="speaker-card">
+    <a href="https://essl.leeds.ac.uk/politics/staff/1073/dr-eike-mark-rinke" target="_blank" rel="noopener">
+      <img src="/img/eike.jpg" alt="Eike Rinke">
+      <strong>Eike Rinke</strong>
+    </a>
+    <span>University of Leeds</span>
+  </li>
+</ul>
 
--   John Doe 1 *(ABC University)*
--   John Doe 2 *(XYZ University)*
+### Hosting Institution
+
+<ul class="green-speakers">
+  <li class="speaker-card">
+    <a href="https://www.leeds.ac.uk/" target="_blank" rel="noopener">
+      <img src="/img/leeds2.png" alt="Kate Kenski">
+      <strong>University of Leeds</strong>
+    </a>
+  </li>
+
+  <li class="speaker-card">
+    <a href="https://cdp.leeds.ac.uk/" target="_blank" rel="noopener">
+      <img src="/img/cfdp.png" alt="Eike Rinke">
+      <strong>Center for Democratic Politics</strong>
+    </a>
+  </li>
+</ul>
+
+
 :::
 
-::: g-col-6
-![](/img/conf-image.jpg){.img_block width="100%"}
+::: {.g-col-6 style="display:flex; align-items:center;"}
+![](/img/leeds4.jpg){style="width:100%; height:auto; max-height:100%; border-radius:12px;"}
 :::
 :::::

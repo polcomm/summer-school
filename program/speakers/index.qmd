@@ -14,7 +14,7 @@ listing:
 
 :::::: grid
 
-::: {#speakers .g-col-12}
+::: {#speakers .g-col-5}
 :::
 
 <div>

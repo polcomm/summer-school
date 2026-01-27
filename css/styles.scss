@@ -272,3 +272,95 @@ footer.footer .nav-footer img {
     margin-top: 0.5rem;
   }
 }
+
+
+/* =========================================================
+   SPEAKERS GRID (override sponsorsFooter flex)
+   ========================================================= */
+
+.sponsorsFooter ul.speakers-grid {
+  display: grid !important;   /* 👈 quebra o flex */
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+
+  justify-items: center;
+  align-items: start;
+}
+
+.sponsorsFooter ul.speakers-grid > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+  .sponsorsFooter ul.speakers-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .sponsorsFooter ul.speakers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .sponsorsFooter ul.speakers-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Fix click issue on middle column (listing overlay) */
+.sponsorsFooter a {
+  position: relative;
+  z-index: 10;
+}
+
+
+/* =========================================================
+   GREEN BOX — COMMITTEE MEMBERS GRID
+   ========================================================= */
+
+.green-speakers {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 0;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* cabe bem no verde */
+  gap: 1.5rem;
+}
+
+.green-speakers .speaker-card {
+  text-align: center;
+}
+
+.green-speakers img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 40%;
+  margin-bottom: 0.5rem;
+}
+
+.green-speakers strong {
+  display: block;
+  font-size: 0.95rem;
+}
+
+.green-speakers span {
+  font-size: 0.85rem;
+  color: #444;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .green-speakers {
+    grid-template-columns: 1fr;
+  }
+}
+

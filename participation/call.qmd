@@ -12,24 +12,22 @@ page-layout: full
 ::: {.g-col-6 .text_block}
 ### Call for submissions
 
-The Political Communication Division of the International Communication Association (ICA) calls for applications for its co-organized 9th edition of the International Summer School in Political Communication that will be held 8-13 July 2026 at the University of Leeds. 
+The Political Communication Division of the International Communication Association (ICA) calls for applications for its co-organized 9th edition of the International Summer School in Political Communication that will be held 13-17 July 2026 at the Devonshire Hall, University of Leeds (UK).
 
-The ICA Political Communication Summer School addresses theoretical and empirical questions at the intersection of political communication, with a special focus on the relationship between political communication, media coverage, and political participation and democracy. This year’s theme is: “Political Communication and Conflict.” Lecturers will address key concepts and phenomena vis-à-vis a host of contemporary contexts, including elections and war. They will speak to the construction and processing of mediated (conflict-based) content and their implications for citizens and society at large.
+The ICA Political Communication Summer School addresses theoretical and empirical questions at the intersection of political communication, political science, and political sociology, with a special focus on the impact of communication factors, from television to the new digital media, on electoral participation, political attitudes, and voting behavior. This year’s theme is: “Political Communication and Democratic Ideals”. 
 
-Building on the experience of the last 15 years, the 2026 Summer School offers a unique opportunity for 30 PhD candidates and early-career academics in communication, sociology, psychology and political science:
+Building on the experience of the last 17 years, the 2026 Summer School offers a unique opportunity for 30 PhD candidates and early-career academics in communication, sociology, psychology and political science:
 
 - to attend an intensive, six-day program that consists of lectures, master classes, paper presentations and mentoring sessions, and
 - to build long-lasting personal and scholarly relations in a celebrated friendly and productive environment.
 
-Participation will be on a competitive basis. Candidates interested in applying to the Milan Summer School should submit a three-page research proposal or an extended abstract of a research paper on issues broadly related to political communication. Submissions should include the name, email address, institutional affiliation, a brief bio (max. 200 words) mentioning main research interests and ongoing projects, and a recommendation letter. An international selection committee will review the applications.
+Participation will be on a competitive basis. Candidates interested in applying to the ICA Summer School should submit a three-page research proposal or an extended abstract of a research paper on issues broadly related to political communication. Submissions should include the name, email address, institutional affiliation, a brief bio (max. 200 words) mentioning main research interests and ongoing projects, and a recommendation letter. An international selection committee will review the applications.
 
 ### Key Dates and Fees
 
-- Application deadline: 29 February
-- Notification of acceptance: 09 April
-- Registration deadline: 24 May
+- Application deadline: 1st March
  
-Enrollment fee: € 900 (covers accommodation, lunches, welcome and farewell dinners). A number of travel grants are available. See how to apply here.
+Enrollment fee: £550 (covers accommodation).
 
 :::
 
@@ -37,6 +35,8 @@ Enrollment fee: € 900 (covers accommodation, lunches, welcome and farewell din
 ![](/img/room.jpg){.img_block width="99%"}
 
 ![](/img/speaker.jpg){.img_block width="99%"}
+
+![](/img/backstudents.jpg){.img_block width="99%"}
 :::
 
 <div></div>
