@@ -1,7 +1,14 @@
 ---
-pagetitle: "Committee members"
+title: "Committee Members"
 page-layout: full
+
+listing:
+  - id: sponsors
+    template: sponsors/sponsors.ejs
+    contents: sponsors/sponsors.yml
 ---
+
+
 
 ::: page-banner
 # Committee Members
@@ -12,21 +19,27 @@ page-layout: full
 ### Organizing Committee
 
 <ul class="green-speakers">
-  <li class="speaker-card">
-    <a href="https://comm.arizona.edu/person/kate-kenski" target="_blank" rel="noopener">
-      <img src="/img/kate.jpg" alt="Kate Kenski">
-      <strong>Kate Kenski</strong>
-    </a>
-    <span>The University of Arizona</span>
-  </li>
 
   <li class="speaker-card">
     <a href="https://essl.leeds.ac.uk/politics/staff/1073/dr-eike-mark-rinke" target="_blank" rel="noopener">
       <img src="/img/eike.jpg" alt="Eike Rinke">
       <strong>Eike Rinke</strong>
     </a>
-    <span>University of Leeds</span>
+    <div class="affiliation">Organizer</div>
+    <div class="affiliation">University of Leeds</div>
   </li>
+
+
+<li class="speaker-card">
+  <a href="https://comm.arizona.edu/person/kate-kenski" target="_blank" rel="noopener">
+    <img src="/img/kate.jpg" alt="Kate Kenski">
+    <strong>Kate Kenski</strong>
+  </a>
+  <div class="affiliation">ICA Polcomm Chair</div>
+  <div class="affiliation">The University of Arizona</div>
+</li>
+
+
 </ul>
 
 ### Hosting Institution
@@ -38,13 +51,6 @@ page-layout: full
       <strong>University of Leeds</strong>
     </a>
   </li>
-
-  <li class="speaker-card">
-    <a href="https://cdp.leeds.ac.uk/" target="_blank" rel="noopener">
-      <img src="/img/cfdp.png" alt="Eike Rinke">
-      <strong>Center for Democratic Politics</strong>
-    </a>
-  </li>
 </ul>
 
 
@@ -53,4 +59,10 @@ page-layout: full
 ::: {.g-col-6 style="display:flex; align-items:center;"}
 ![](/img/leeds4.jpg){style="width:100%; height:auto; max-height:100%; border-radius:12px;"}
 :::
+
+
 :::::
+
+::: {#sponsors}
+:::
+

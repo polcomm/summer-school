@@ -17,6 +17,10 @@
     ],
     "program\\speakers\\index.qmd": [
       "speakers.yml"
+    ],
+    "about\\organizers.qmd": [
+      "about/sponsors/sponsors.yml",
+      "sponsors/sponsors.yml"
     ]
   }
 }
