@@ -12,6 +12,10 @@
     "items": []
   },
   {
+    "listing": "/about/organizers.html",
+    "items": []
+  },
+  {
     "listing": "/about/sponsors/index.html",
     "items": []
   },
@@ -21,10 +25,6 @@
   },
   {
     "listing": "/program/schedule/index.html",
-    "items": []
-  },
-  {
-    "listing": "/about/organizers.html",
     "items": []
   }
 ]

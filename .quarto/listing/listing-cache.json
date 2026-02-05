@@ -1,5 +1,8 @@
 {
   "listingMap": {
+    "about\\organizers.qmd": [
+      "sponsors/sponsors.yml"
+    ],
     "about\\sponsors\\index.qmd": [
       "sponsors.yml"
     ],
@@ -17,10 +20,6 @@
     ],
     "program\\speakers\\index.qmd": [
       "speakers.yml"
-    ],
-    "about\\organizers.qmd": [
-      "about/sponsors/sponsors.yml",
-      "sponsors/sponsors.yml"
     ]
   }
 }
