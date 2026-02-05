@@ -19,6 +19,8 @@ website:
             href: about/about.qmd
           - text: Organizing committee
             href: about/organizers.qmd
+          #- text: Sponsors
+          #  href: about/sponsors/sponsors.qmd
 
       - text: Program
         menu:

@@ -12,27 +12,13 @@ $dark-accent: #22b473;
 /*-- scss:rules --*/
 
 /* =========================================================
-   BASE TYPOGRAPHY (FIX SMALL TEXT PROBLEM)
+   BASE
    ========================================================= */
-
-html {
-  font-size: 16.5px;
-}
 
 body {
   background: $body-bg;
   margin: 0;
   padding: 0;
-  line-height: 1.7;
-}
-
-p {
-  line-height: 1.7;
-}
-
-#quarto-content main {
-  max-width: 1150px;
-  margin: auto;
 }
 
 
@@ -67,8 +53,6 @@ p {
 .page-banner h1 {
   color: #000000;
   margin: 0;
-  font-size: 2.2rem;
-  font-weight: 700;
 }
 
 
@@ -102,11 +86,56 @@ p {
 
 
 /* =========================================================
+   GRID / CONTENT
+   ========================================================= */
+
+.grid {
+  margin-top: 0 !important;
+}
+
+#quarto-content > .grid {
+  padding-top: 10px !important;
+}
+
+
+/* =========================================================
+   COUNTDOWN — SAME COLOR AS FOOTER
+   ========================================================= */
+
+#listing-countdown {
+  background: $dark-bg;
+  color: $dark-text;
+  text-align: center;
+  margin: 0 0 0.5em 0;
+}
+
+#countdown li {
+  display: inline-block;
+  font-size: 1.2em;
+  list-style-type: none;
+  padding: 0.8em;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#countdown li:last-child {
+  border-right: none;
+}
+
+.countdown_date {
+  display: block;
+  font-size: 2.3em;
+  font-weight: bold;
+  color: $dark-accent;
+}
+
+
+/* =========================================================
    TEXT BLOCKS
    ========================================================= */
 
 .text_block {
-  padding: 28px;
+  padding: 24px;
+  font-size: 0.95rem;
   background-color: #eaf4f1;
   margin-left: 5%;
   border-radius: 6px;
@@ -114,6 +143,7 @@ p {
 
 .full_text_block {
   padding: 36px;
+  font-size: 0.95rem;
   background-color: #eaf4f1;
   margin: 0 2.5%;
   border-radius: 8px;
@@ -137,7 +167,7 @@ p {
 
 
 /* =========================================================
-   FOOTER
+   FOOTER — SAME COLOR AS COUNTDOWN
    ========================================================= */
 
 footer.footer {
@@ -170,14 +200,14 @@ footer.footer .nav-footer img {
    ========================================================= */
 
 .sponsorsFooter {
-  padding: 40px 0;
+  padding: 32px 0;
 }
 
 .sponsorsFooter ul {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  gap: 64px;
+  gap: 56px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -191,9 +221,103 @@ footer.footer .nav-footer img {
 }
 
 .sponsorsFooter .sblogos__img {
-  height: 64px;
+  height: 56px;
   width: auto;
   object-fit: contain;
+}
+
+/* Speaker images */
+.sponsorsFooter img {
+  width: 180px;
+  height: 180px;
+  border-radius: 40%;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+
+
+/* =========================================================
+   GLOBAL MOBILE COLUMN FIX
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  /* Quarto / Bootstrap / generic grids */
+  .grid,
+  .columns,
+  .row {
+    display: block !important;
+  }
+
+  /* Any column */
+  .column,
+  [class*="col-"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: none !important;
+  }
+
+  /* Ensure vertical flow */
+  .column,
+  [class*="col-"] {
+    margin-bottom: 1rem;
+  }
+
+  /* Images inside columns */
+  .column img,
+  [class*="col-"] img {
+    width: 100%;
+    height: auto;
+    margin-top: 0.5rem;
+  }
+}
+
+
+/* =========================================================
+   SPEAKERS GRID (override sponsorsFooter flex)
+   ========================================================= */
+
+.sponsorsFooter ul.speakers-grid {
+  display: grid !important;   /* 👈 quebra o flex */
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+
+  justify-items: center;
+  align-items: start;
+}
+
+.sponsorsFooter ul.speakers-grid > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+  .sponsorsFooter ul.speakers-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .sponsorsFooter ul.speakers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .sponsorsFooter ul.speakers-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Fix click issue on middle column (listing overlay) */
+.sponsorsFooter a {
+  position: relative;
+  z-index: 10;
 }
 
 
@@ -207,8 +331,8 @@ footer.footer .nav-footer img {
   margin: 1.5rem 0 0;
 
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.6rem;
+  grid-template-columns: repeat(2, 1fr); /* cabe bem no verde */
+  gap: 1.5rem;
 }
 
 .green-speakers .speaker-card {
@@ -216,32 +340,33 @@ footer.footer .nav-footer img {
 }
 
 .green-speakers img {
-  width: 130px;
-  height: 130px;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 0.6rem;
+  border-radius: 40%;
+  margin-bottom: 0.5rem;
 }
 
 .green-speakers strong {
   display: block;
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-
-.green-speakers span,
-.green-speakers .affiliation {
   font-size: 0.95rem;
-  color: #444;
 }
 
+.green-speakers span {
+  font-size: 0.85rem;
+  color: #444;
+  display: block;
+}
 
-/* =========================================================
-   MOBILE
-   ========================================================= */
+/* espaçamento entre linhas de afiliacao */
+.green-speakers span + span {
+  margin-top: 2px;
+}
 
+/* Mobile */
 @media (max-width: 768px) {
   .green-speakers {
     grid-template-columns: 1fr;
   }
 }
+

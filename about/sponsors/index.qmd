@@ -1,35 +1,23 @@
 ---
-pagetitle: "Sponsorship"
+pagetitle: "Sponsors"
 
 listing:
   - id: sponsors
-    template: sponsors.ejs
+    template: sponsors-inline.ejs
     contents: sponsors.yml
 ---
 
 ::: page-banner
-# Acknowledgement
-:::
-
-:::::: grid
-::: {#sponsors .g-col-12}
+# Sponsors
 :::
 
 ::: {#sponsorship .g-col-12 .full_text_block}
-## Sponsorship Details
-
-satRday is committed to being an affordable and open conference for all interested R users. To provide highly discounted tickets, we plan to raise \$10,000 with sponsors this year.
-
-Sponsorship price is \$1,000 and includes:
-
--   Three (3) individual registrations (a \$50 value)
--   Your organization's logo displayed on the conference website and at the beginning of each talk
--   An optional 5-minute slot at the conference where you may talk about how you use R in your organization
-
-Sponsors will benefit from direct access to one of the main organizers to address any questions or extra requests.
+The ICA Polcomm Summer School is sponsored by the Center of Democratic Politics, the School of Media and Communication, and the ICA Political Communication Division.
 :::
 
-<div>
 
-</div>
+:::::: grid
+::: {#sponsors}
+
+
 ::::::
