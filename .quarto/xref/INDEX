@@ -37,5 +37,8 @@
   },
   "LICENSE.md": {
     "LICENSE.html": "0fb7eb90"
+  },
+  "about/sponsors/sponsors.qmd": {
+    "sponsors.html": "ad48f754"
   }
 }

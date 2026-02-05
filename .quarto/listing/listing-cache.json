@@ -6,6 +6,9 @@
     "about\\sponsors\\index.qmd": [
       "sponsors.yml"
     ],
+    "about\\sponsors\\sponsors.qmd": [
+      "sponsors.yml"
+    ],
     "index.qmd": [
       "about/sponsors/sponsors.yml"
     ],
