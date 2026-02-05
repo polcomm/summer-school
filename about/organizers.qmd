@@ -1,13 +1,12 @@
 ---
-title: "Committee Members"
+title: ""
 page-layout: full
 
 listing:
   - id: sponsors
-    template: sponsors/sponsors.ejs
+    template: sponsors/sponsors-inline.ejs
     contents: sponsors/sponsors.yml
 ---
-
 
 
 ::: page-banner
@@ -16,7 +15,6 @@ listing:
 
 ::::: grid
 ::: {.g-col-6 .text_block}
-### Organizing Committee
 
 <ul class="green-speakers">
 
@@ -61,8 +59,9 @@ listing:
 :::
 
 
-:::::
+:::::::::
+
+## Our Sponsors
 
 ::: {#sponsors}
 :::
-
