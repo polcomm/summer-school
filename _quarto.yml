@@ -33,7 +33,7 @@ website:
 
       - text: Call for Participation
         menu:
-          - text: Call for submissions
+          - text: Application Details
             href: participation/call.qmd
           #- text: Key dates
           #  href: participation/keydates/

@@ -3,18 +3,16 @@ page-layout: full
 ---
 
 ::: {.page-banner}
-# Call for submissions
+# Application Details
 :::
 
 ::: grid
 
 
 ::: {.g-col-6 .text_block}
-### Call for submissions
+The Political Communication Division of the International Communication Association (ICA) calls for applications for its co-organized 9th edition of the International Summer School in Political Communication that will be hosted by the Centre for Democratic Politics from 13-17 July 2026 at Devonshire Hall, University of Leeds (UK).
 
-The Political Communication Division of the International Communication Association (ICA) calls for applications for its co-organized 9th edition of the International Summer School in Political Communication that will be held 13-17 July 2026 at the Devonshire Hall, University of Leeds (UK).
-
-The ICA Political Communication Summer School addresses theoretical and empirical questions at the intersection of political communication, political science, and political sociology, with a special focus on the impact of communication factors, from television to the new digital media, on electoral participation, political attitudes, and voting behavior. This year’s theme is: “Political Communication and Democratic Ideals”. 
+The ICA Political Communication Summer School addresses theoretical and empirical questions at the intersection of political communication, political science, and political sociology, with a special focus on the impact of communication factors, from television to new digital media, on electoral participation, political attitudes, and voting behavior. This year’s theme is: “Political Communication and Democratic Ideals”. 
 
 Building on the experience of the last 17 years, the 2026 Summer School offers a unique opportunity for 30 PhD candidates and early-career academics in communication, sociology, psychology and political science:
 
