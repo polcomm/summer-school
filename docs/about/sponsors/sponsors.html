@@ -178,10 +178,10 @@ window.Quarto = {
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-call-for-participation" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Call for Participation</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-call-for-applications" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Call for Applications</span>
     </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-call-for-participation">    
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-call-for-applications">    
         <li>
     <a class="dropdown-item" href="../../participation/call.html">
  <span class="dropdown-text">Application Details</span></a>
@@ -213,20 +213,52 @@ window.Quarto = {
 </section>
 <div class="grid">
 <div id="listing-sponsors" class="g-col-12 quarto-listing quarto-listing-container-custom">
-<div class="sponsorsFooter">
-      <h1 id="sponsorTitle" data-default-title="<strong>Our Sponsors</strong>"><strong>Our Sponsors</strong></h1>
-      <ul>
-        
-                            <li><a href="https://cdp.leeds.ac.uk/" target="_blank" class="sblogos__link"><img class="sblogos__img" src="../../img/cfdp.png" alt="Center for Democratic Politics logo"></a></li>
-        
-                            <li><a href="https://ahc.leeds.ac.uk/media" target="_blank" class="sblogos__link"><img class="sblogos__img" src="../../img/leeds.png" alt="University of Leeds - School of Communication and Media logo"></a></li>
-        
-                            <li><a href="https://politicalcommunication.org/" target="_blank" class="sblogos__link"><img class="sblogos__img" src="../../img/polcomm.png" alt="Political Communication Division logo"></a></li>
-        
-                            <li><a href="https://www.icahdq.org/" target="_blank" class="sblogos__link"><img class="sblogos__img" src="../../img/ica.png" alt="International Communication Association logo"></a></li>
-        
-      </ul>
-    </div>
+<div class="sponsorsFooter" style="text-align:center; margin-top:3rem;">
+
+  <h1 id="sponsorTitle"><strong>Our Sponsors</strong></h1>
+
+  <ul style="
+      list-style:none;
+      padding:0;
+      margin:1.5rem 0 0 0;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      flex-wrap:wrap;
+      gap:40px;
+  ">
+    
+      <li style="display:flex; align-items:center; justify-content:center;">
+        <a href="https://cdp.leeds.ac.uk/" target="_blank">
+          <img src="../../img/cfdp.png" alt="Center for Democratic Politics logo" style="height:60px; width:auto;">
+        </a>
+      </li>
+    
+      <li style="display:flex; align-items:center; justify-content:center;">
+        <a href="https://ahc.leeds.ac.uk/media" target="_blank">
+          <img src="../../img/leeds.png" alt="University of Leeds - School of Communication and Media logo" style="height:60px; width:auto;">
+        </a>
+      </li>
+    
+      <li style="display:flex; align-items:center; justify-content:center;">
+        <a href="https://politicalcommunication.org/" target="_blank">
+          <img src="../../img/polcomm.png" alt="Political Communication Division logo" style="height:60px; width:auto;">
+        </a>
+      </li>
+    
+      <li style="display:flex; align-items:center; justify-content:center;">
+        <a href="https://www.icahdq.org/" target="_blank">
+          <img src="../../img/ica.png" alt="International Communication Association logo" style="height:60px; width:auto;">
+        </a>
+      </li>
+    
+  </ul>
+
+</div>
+
+<div class="listing-no-matching d-none">
+No matching items
+</div>
 </div>
 <div id="sponsorship" class="g-col-12 full_text_block">
 <section id="sponsorship-details" class="level2">
@@ -247,9 +279,42 @@ window.Quarto = {
 </div>
 
 
-</div>
 
 
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+
+  const links = document.querySelectorAll("a[href]");
+
+
+
+  links.forEach(link => {
+
+    const url = new URL(link.href, window.location.origin);
+
+
+
+    // apenas links externos
+
+    if (url.origin !== window.location.origin) {
+
+      link.setAttribute("target", "_blank");
+
+      link.setAttribute("rel", "noopener noreferrer");
+
+    }
+
+  });
+
+
+
+});
+
+</script>
 
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -668,7 +733,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
- <!-- /content -->
+</div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">

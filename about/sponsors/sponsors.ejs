@@ -1,11 +1,27 @@
 ```{=html}
-<div class='sponsorsFooter'>
-      <h1 id="sponsorTitle" data-default-title="<strong>Our Sponsors</strong>"><strong>Our Sponsors</strong></h1>
-      <ul>
-        <% for (const item of items) { %>
-							<li><a href="<%- item.href %>" target="_blank" class="sblogos__link"><img class="sblogos__img" src="<%- item.thumbnail %>" alt="<%= item.name %> logo" /></a></li>
-        <% } %>
-      </ul>
-    </div>
+<div class='sponsorsFooter' style="text-align:center; margin-top:3rem;">
+
+  <h1 id="sponsorTitle"><strong>Our Sponsors</strong></h1>
+
+  <ul style="
+      list-style:none;
+      padding:0;
+      margin:1.5rem 0 0 0;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      flex-wrap:wrap;
+      gap:40px;
+  ">
+    <% for (const item of items) { %>
+      <li style="display:flex; align-items:center; justify-content:center;">
+        <a href="<%- item.href %>" target="_blank">
+          <img src="<%- item.thumbnail %>" alt="<%= item.name %> logo" style="height:60px; width:auto;">
+        </a>
+      </li>
+    <% } %>
+  </ul>
+
 </div>
+
 ```

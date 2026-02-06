@@ -31,7 +31,7 @@ website:
           #- text: Participants
           #  href: program/participants/
 
-      - text: Call for Participation
+      - text: Call for Applications
         menu:
           - text: Application Details
             href: participation/call.qmd
@@ -75,6 +75,7 @@ format:
       light: [cosmo, css/styles.scss]
     page-layout: custom
     toc: false
+    include-after-body: includes/external-links.html
 
 editor: visual
 

@@ -118,10 +118,10 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-call-for-participation" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Call for Participation</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-call-for-applications" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Call for Applications</span>
     </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-call-for-participation">    
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-call-for-applications">    
         <li>
     <a class="dropdown-item" href="../participation/call.html">
  <span class="dropdown-text">Application Details</span></a>
@@ -157,7 +157,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="g-col-6">
 <section id="the-lectures" class="level3 content-block">
 <h3 class="anchored" data-anchor-id="the-lectures">The Lectures</h3>
-<p>The School addresses the main theoretical and empirical questions at the intersection of political communication, political science, and political sociology, with a special focus on the relationship between political communication, media, political participation and democracy.</p>
+<p>The School brings together world-leading researchers in Political Communication to address key theoretical and empirical questions at the intersection of political communication, political science, and political sociology. Through lectures, workshops, and intensive feedback sessions, participants engage with cutting-edge research on the relationships between political communication, media, political participation, and democracy, while developing their own projects under the close mentorship of leading scholars in the field.</p>
 </section>
 <section id="the-faculty" class="level3 content-block">
 <h3 class="anchored" data-anchor-id="the-faculty">The Faculty</h3>
@@ -190,6 +190,40 @@ ul.task-list li input[type="checkbox"] {
 
 
 </main> <!-- /main -->
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+
+
+  const links = document.querySelectorAll("a[href]");
+
+
+
+  links.forEach(link => {
+
+    const url = new URL(link.href, window.location.origin);
+
+
+
+    // apenas links externos
+
+    if (url.origin !== window.location.origin) {
+
+      link.setAttribute("target", "_blank");
+
+      link.setAttribute("rel", "noopener noreferrer");
+
+    }
+
+  });
+
+
+
+});
+
+</script>
+
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
