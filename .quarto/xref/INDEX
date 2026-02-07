@@ -40,5 +40,8 @@
   },
   "about/sponsors/sponsors.qmd": {
     "sponsors.html": "ad48f754"
+  },
+  "participation/application.qmd": {
+    "application.html": "0be6dc6e"
   }
 }

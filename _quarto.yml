@@ -29,12 +29,16 @@ website:
           - text: Speakers
             href: program/speakers/
           #- text: Participants
+          #  href: program/participants/  
+          #- text: Participants
           #  href: program/participants/
 
       - text: Call for Applications
         menu:
           - text: Application Details
             href: participation/call.qmd
+          - text: Application Form
+            href: participation/application.qmd  
           #- text: Key dates
           #  href: participation/keydates/
           #- text: Registration
