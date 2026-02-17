@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "ICA Polcomm Summer School"
+  title: "ICA PolComm Summer School"
   sidebar: false
 
   navbar:
@@ -71,7 +71,7 @@ website:
           </a>
 
       - icon: envelope
-        href: mailto:politicalcommunication.org@gmail.com
+        href: mailto:cdp@leeds.ac.uk
 
 format:
   html:

@@ -102,6 +102,7 @@ body {
    COUNTDOWN — SAME COLOR AS FOOTER
    ========================================================= */
 
+
 #listing-countdown {
   background: $dark-bg;
   color: $dark-text;
@@ -126,6 +127,11 @@ body {
   font-size: 2.3em;
   font-weight: bold;
   color: $dark-accent;
+}
+
+.quarto-listing-container h3.countdown-title {
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em;
 }
 
 

@@ -1,45 +1,53 @@
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js"></script>
-<script>
 
-//countdown timer
+<script>
+// countdown timer
 (function () {
+
   const second = 1000,
         minute = second * 60,
-        hour = minute * 60,
-        day = hour * 24;
+        hour   = minute * 60,
+        day    = hour * 24;
 
-  let deadline = document.getElementById("countdownDate").innerText//"Sept 21, 2023 23:59:00",
-  console.log(deadline);
-        countDown = new Date(deadline).getTime(),
-      x = setInterval(function() {    
+  // lê a data gerada pelo EJS
+  let raw = document.getElementById("countdownDate").innerText.trim();
 
-        let now = new Date().getTime(),
-            distance = countDown - now;
+  // ISO-8601 safe parsing (funciona em qualquer navegador)
+  let countDown = Date.parse(raw);
 
-        document.getElementById("days").innerText = Math.floor(distance / (day)),
-          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+  console.log("Deadline:", raw, countDown);
 
-        //do something later when date is reached
-        if (distance < 0) {
-           headline = document.getElementById("headline");
-		document.getElementById("days").innerText = 0;
-		document.getElementById("hours").innerText = 0;
-		document.getElementById("minutes").innerText = 0;
-		document.getElementById("seconds").innerText = 0;
-           //countdown = document.getElementById("countdown");
-           //content = document.getElementById("content");
+  let x = setInterval(function() {
 
-          headline.innerText = "THE CONFERENCE IS ONGOING!";
-		document.getElementById("btn_store").disabled = true
-          //countdown.style.display = "none";
-          //content.style.display = "block";
+    let now = new Date().getTime();
+    let distance = countDown - now;
 
-          clearInterval(x);
-        }
-        //seconds
-      }, 0)
-  }());
-    </script>
+    // se ainda não chegou
+    if (distance >= 0) {
+      document.getElementById("days").innerText    = Math.floor(distance / day);
+      document.getElementById("hours").innerText   = Math.floor((distance % day) / hour);
+      document.getElementById("minutes").innerText = Math.floor((distance % hour) / minute);
+      document.getElementById("seconds").innerText = Math.floor((distance % minute) / second);
+    }
+
+    // quando chegar na data
+    if (distance < 0) {
+      clearInterval(x);
+
+      document.getElementById("days").innerText = 0;
+      document.getElementById("hours").innerText = 0;
+      document.getElementById("minutes").innerText = 0;
+      document.getElementById("seconds").innerText = 0;
+
+      const headline = document.getElementById("headline");
+      if (headline) headline.innerText = "APPLICATION DEADLINE REACHED";
+
+      const btn = document.getElementById("btn_store");
+      if (btn) btn.disabled = true;
+    }
+
+  }, 1000); // atualiza a cada 1 segundo
+
+})();
+</script>

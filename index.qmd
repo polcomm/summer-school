@@ -13,13 +13,13 @@ listing:
   - id: countdown
     template: countdown.ejs
     contents: 
-      - datetime: July 13, 2026 23:59:00
+      - datetime: 2026-03-24T23:59:00+00:00
   - id: sponsors
     template: about/sponsors/sponsors.ejs
     contents: about/sponsors/sponsors.yml
 ---
 
-::::::::: grid
+:::::::: grid
 ::: {#banner_small .g-col-12}
 :::
 
@@ -29,20 +29,22 @@ listing:
 ::: {.g-col-6 .text_block}
 ### About the ICA Political Communication Summer School
 
-The School addresses the main theoretical and empirical questions in political communication, with a faculty lecture focus on democratic citizenship, democratic backsliding and resilience, AI, digital media and misinformation, civic engagement, and polarization. Students who are working on political communication studies are invited to apply. For themes in political communication covered by our division, see the [ICA Political Communication Division homepage](https://www.icahdq.org/group/political).
-
+The School addresses key theoretical and empirical questions in political communication, with faculty lectures focusing on democratic citizenship, democratic backsliding and resilience, AI, digital media and misinformation, civic engagement, and polarization. Students who are working on political communication questions in these areas are invited to apply. For themes in political communication covered by our division, see the [ICA Political Communication Division homepage](https://www.icahdq.org/group/political).
 
 ### Location
 
-The Summer School will be hosted by the Centre for Democratic Politics, University of Leeds (UK) and take place at [Devonshire Hall](https://accommodation.leeds.ac.uk/residence/4/devonshire-hall),  University of Leeds (UK), between 13-17 July 2026 ([View on Google Maps](https://www.google.com/maps?q=Devonshire+Hall+University+of+Leeds)).
+The Summer School will be hosted by the Centre for Democratic Politics, University of Leeds (UK) and take place at [Devonshire Hall](https://accommodation.leeds.ac.uk/residence/4/devonshire-hall), University of Leeds (UK), between 13-17 July 2026 ([View on Google Maps](https://www.google.com/maps?q=Devonshire+Hall+University+of+Leeds)).
 
+### Key Dates and Fees
+
+-   Application deadline: March 24 (23:59 UK time)
+-   Enrollment fee: £550 (covers accommodation, daytime meals/catering, teaching programme, and Sunday night arrival).
 :::
 
 ::: {.g-col-6 .img_margin}
 ![](/img/mycity.jpg){.img_block width="100%"}
 :::
 
-
 ::: {#sponsors .g-col-12}
 :::
-:::::::::
+::::::::

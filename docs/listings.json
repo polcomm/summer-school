@@ -12,11 +12,7 @@
     "items": []
   },
   {
-    "listing": "/about/sponsors/index.html",
-    "items": []
-  },
-  {
-    "listing": "/about/organizers.html",
+    "listing": "/index.html",
     "items": []
   },
   {
@@ -24,7 +20,11 @@
     "items": []
   },
   {
-    "listing": "/index.html",
+    "listing": "/about/organizers.html",
+    "items": []
+  },
+  {
+    "listing": "/about/sponsors/index.html",
     "items": []
   },
   {
