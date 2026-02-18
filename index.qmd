@@ -13,7 +13,7 @@ listing:
   - id: countdown
     template: countdown.ejs
     contents: 
-      - datetime: 2026-03-24T23:59:00+00:00
+      - datetime: 2026-03-23T23:59:00+00:00
   - id: sponsors
     template: about/sponsors/sponsors.ejs
     contents: about/sponsors/sponsors.yml
@@ -37,8 +37,11 @@ The Summer School will be hosted by the Centre for Democratic Politics, Universi
 
 ### Key Dates and Fees
 
--   Application deadline: March 24 (23:59 UK time)
+-   Application deadline: March 23 (23:59 UK time)
+-   Recommendation Letter Submissions by Referees: March 25 (23:59 UK time)
+-   Notifications of Acceptance: April 15 
 -   Enrollment fee: £550 (covers accommodation, daytime meals/catering, teaching programme, and Sunday night arrival).
+
 :::
 
 ::: {.g-col-6 .img_margin}
