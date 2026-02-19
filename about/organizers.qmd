@@ -53,7 +53,7 @@ listing:
   <li class="speaker-card">
     <a href="https://cdp.leeds.ac.uk/" target="_blank" rel="noopener">
       <img src="/img/cfdp.png" alt="CDP">
-      <strong>University of Leeds</strong>
+      <strong>Center for Democratic Politics</strong>
     </a>
   </li>
 </ul>
