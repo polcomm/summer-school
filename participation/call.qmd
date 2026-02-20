@@ -10,9 +10,9 @@ page-layout: full
 
 
 ::: {.g-col-6 .text_block}
-The ICA Political Communication Summer School is a flagship program that brings together outstanding PhD students and early-career researchers from around the world for an immersive week of training and mentoring. Featuring prominent political communication scholars from around the globe, the Summer School offers participants an intensive week of learning in master classes, engaging in small-group discussions, and receiving feedback on their research. Across the programme, participants engage with cutting-edge debates and methods in this fast-moving field and receive detailed guidance on their own projects through structured consultations, discussant feedback, and informal conversations with faculty. While the 2026 theme is “Political Communication and Democratic Ideals,” we warmly welcome applications from researchers working on any aspect of political communication, and we look forward to hosting the cohort in the inspiring collegiate setting of Devonshire Hall at the University of Leeds (UK).
+The School addresses key theoretical and empirical questions in political communication, with faculty lectures focusing on democratic citizenship, democratic backsliding and resilience, AI, digital media and misinformation, civic engagement, and polarization. Students who are working on political communication questions in these areas are invited to apply. For themes in political communication covered by our division, see the [ICA Political Communication Division homepage](https://politicalcommunication.org/).
 
-Building on the experience of the last 17 years, the 2026 Summer School offers a unique opportunity for 30 PhD candidates and early-career academics in communication, sociology, psychology and political science:
+Building on the experience of the last 17 years, the 2026 Summer School offers a unique opportunity for PhD candidates and early-career academics in communication, sociology, psychology and political science:
 
 - to attend an immersive, five-day program that comprises lectures, master classes, paper presentations, and mentoring sessions, and
 - to build long-lasting personal and scholarly relations in a celebrated friendly and productive environment.

@@ -284,13 +284,19 @@ footer.footer .nav-footer img {
    SPEAKERS GRID (override sponsorsFooter flex)
    ========================================================= */
 
+
 .sponsorsFooter ul.speakers-grid {
-  display: grid !important;   /* 👈 quebra o flex */
-  grid-template-columns: repeat(5, 1fr);
-  gap: 2rem;
+  display: grid !important;
+
+  grid-template-columns: repeat(4, 260px) !important;
+  gap: 2.5rem;
+
+  width: max-content;          /* 👈 ESSA É A CHAVE */
+  margin-left: auto !important;
+  margin-right: auto !important;
 
   justify-items: center;
-  align-items: start;
+  padding: 0;
 }
 
 .sponsorsFooter ul.speakers-grid > li {

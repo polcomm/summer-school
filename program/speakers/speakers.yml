@@ -2,8 +2,14 @@
       affiliation: The Hebrew University of Jerusalem
       href: https://christian-baden.huji.ac.il/
       thumbnail: img/baden.jpg
-      social: 
-      - website: https://christian-baden.huji.ac.il/
+      social:
+      - website: https://christian-baden.huji.ac.il/      
+    - name: Stephen Coleman
+      affiliation: University of Leeds
+      href: https://ahc.leeds.ac.uk/media/staff/240/professor-stephen-coleman
+      thumbnail: img/stephen.jpg
+      social:       
+      - website: https://ahc.leeds.ac.uk/media/staff/240/professor-stephen-coleman
     - name: Dam Hee Kim
       affiliation: Korea University
       href: https://damheekim.wixsite.com/website
