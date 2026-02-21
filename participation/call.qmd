@@ -10,8 +10,6 @@ page-layout: full
 
 
 ::: {.g-col-6 .text_block}
-The School addresses key theoretical and empirical questions in political communication, with faculty lectures focusing on democratic citizenship, democratic backsliding and resilience, AI, digital media and misinformation, civic engagement, and polarization. Students who are working on political communication questions in these areas are invited to apply. For themes in political communication covered by our division, see the [ICA Political Communication Division homepage](https://politicalcommunication.org/).
-
 Building on the experience of the last 17 years, the 2026 Summer School offers a unique opportunity for PhD candidates and early-career academics in communication, sociology, psychology and political science:
 
 - to attend an immersive, five-day program that comprises lectures, master classes, paper presentations, and mentoring sessions, and
