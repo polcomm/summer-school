@@ -70,5 +70,5 @@ listing:
 
 ## Our Sponsors
 
-::: {#sponsors}
+::: {#sponsors .g-col-12}
 :::
