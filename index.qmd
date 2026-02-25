@@ -13,7 +13,7 @@ listing:
   - id: countdown
     template: countdown.ejs
     contents: 
-      - datetime: 2026-03-23T23:59:00+00:00
+      - datetime: 2026-03-30T23:59:00+00:00
   - id: sponsors
     template: about/sponsors/sponsors.ejs
     contents: about/sponsors/sponsors.yml
