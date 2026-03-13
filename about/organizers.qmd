@@ -21,9 +21,10 @@ listing:
   <li class="speaker-card">
     <a href="https://essl.leeds.ac.uk/politics/staff/1073/dr-eike-mark-rinke" target="_blank" rel="noopener">
       <img src="/img/eike.jpg" alt="Eike Rinke">
-      <strong>Eike Rinke</strong>
+      <strong>Eike Mark Rinke</strong>
     </a>
-    <div class="affiliation">Local Organizer</div>
+    <div class="affiliation">Local Summer School Organizer</div>
+    <div class="affiliation"><i>School of Politics and International Studies</i></div>
     <div class="affiliation">University of Leeds</div>
   </li>
 
@@ -34,9 +35,9 @@ listing:
     <strong>Kate Kenski</strong>
   </a>
   <div class="affiliation">ICA PolComm Chair</div>
+  <div class="affiliation"><i>Department of Communication</i></div>
   <div class="affiliation">The University of Arizona</div>
-</li>
-
+  </li>
 
 </ul>
 
