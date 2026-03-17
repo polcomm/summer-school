@@ -1,5 +1,9 @@
 ---
 page-layout: full
+listing:
+  - id: sponsors
+    template: sponsors/sponsors-inline.ejs
+    contents: sponsors/sponsors.yml
 ---
 
 ::: page-banner
@@ -60,4 +64,9 @@ Building on two decades of experience, the 2026 Summer School offers a unique op
 1. to attend an immersive, five-day program that comprises lectures, master classes, paper presentations, and mentoring sessions; and
 2. to build long-lasting personal and scholarly relations in a celebrated, friendly, and productive environment.
 
+:::
+
+## Our Sponsors
+
+::: {#sponsors .g-col-12}
 :::

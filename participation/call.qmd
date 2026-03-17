@@ -1,5 +1,10 @@
 ---
 page-layout: full
+listing:
+  - id: sponsors
+    template: ../about/sponsors/sponsors-inline.ejs
+    contents: 
+      - ../about/sponsors/sponsors.yml
 ---
 
 ::: {.page-banner}
@@ -44,3 +49,9 @@ An international selection committee will evaluate applications based on scholar
 
 <div></div>
 :::
+
+## Our Sponsors
+
+::: {#sponsors .g-col-12}
+:::
+

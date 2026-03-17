@@ -1,14 +1,14 @@
 - name: Center for Democratic Politics
   href: https://cdp.leeds.ac.uk/
   thumbnail: /img/cfdp.png
-  
-- name: University of Leeds - School of Communication and Media
-  href: https://ahc.leeds.ac.uk/media
-  thumbnail: /img/leeds.png
 
 - name: University of Leeds - School of Politics and International Studies
   href: https://essl.leeds.ac.uk/politics
   thumbnail: /img/polis.png
+
+- name: University of Leeds - School of Communication and Media
+  href: https://ahc.leeds.ac.uk/media
+  thumbnail: /img/leeds.png
 
 - name: Political Communication Division
   href: https://politicalcommunication.org/

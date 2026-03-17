@@ -1,6 +1,10 @@
 ---
 pagetitle: "Contact us"
 page-layout: full
+listing:
+  - id: sponsors
+    template: about/sponsors/sponsors.ejs
+    contents: about/sponsors/sponsors.yml
 ---
 
 
@@ -20,4 +24,9 @@ page-layout: full
 ::: g-col-6
 ![](/img/leeds.jpg){.img_block width="100%"}
 :::
+:::
+
+## Our Sponsors
+
+::: {#sponsors .g-col-12}
 :::
