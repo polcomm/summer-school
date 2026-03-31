@@ -10,60 +10,45 @@ listing:
 # About ICA Political Communication Summer School
 :::
 
-:::::: grid
-
-::: {.g-col-6}
-
-::: {.content-block}
-
+:::::::::: grid
+:::::: g-col-6
+::: content-block
 ### The Lectures
 
 The School brings together world-reknowned researchers in political communication to address key theoretical and empirical questions as they arise around the globe. Through lectures, workshops, and small-group intensive feedback sessions, participants engage with cutting-edge research on the relationships between political communication, media, political participation, and democracy, while developing their own projects under the close mentorship of leading scholars in the field.
-
 :::
 
-::: {.content-block}
-
+::: content-block
 ### The Faculty
 
 The 2026 Faculty gathers internationally renowned academics to engage with students. Confirmed in-person speakers include: Christian Baden (The Hebrew University of Jerusalem), Stephen Coleman (University of Leeds), Dam Hee Kim (Korea University), Regina Lawrence (University of Oregon), Joerg Matthes (University of Vienna), Patricia Moy (University of Washington), Chris Fei Shen (City University of Hong Kong), Lone Sorensen (University of Leeds), Talia Stroud (University of Texas at Austin), Sebastián Valenzuela (Pontificia Universidad Católica de Chile), Claes de Vreese (University of Amsterdam).
-
-
 :::
 
-::: {.content-block}
-
+::: content-block
 ### The Students
 
 Participants come from around the globe; countries represented at previous Summer Schools include Australia, Brazil, Canada, Colombia, the Czech Republic, Finland, France, Germany, India, Italy, Latvia, The Netherlands, New Zealand, Norway, Pakistan, Poland, Portugal, Russia, Serbia, Slovakia, South Africa, Spain, Sweden, Turkey, UK, USA, among others.
-
 :::
+::::::
 
-:::
-
-::: {.g-col-6}
-
-::: {.image-block}
+::::: g-col-6
+::: image-block
 ![](/img/participants.jpg){width="100%"}
 :::
 
-::: {.image-block}
+::: image-block
 ![](/img/students-img.jpg){width="100%"}
 :::
+:::::
+::::::::::
 
-:::
-
-::::::
-
-::: {.full_text_block}
-
+::: full_text_block
 ### A Successful Experience
 
 Building on two decades of experience, the 2026 Summer School offers a unique opportunity for PhD candidates and early-career academics in communication, political science, sociology, and psychology:
 
-1. to attend an immersive, five-day program that comprises lectures, master classes, paper presentations, and mentoring sessions; and
-2. to build long-lasting personal and scholarly relations in a celebrated, friendly, and productive environment.
-
+1.  to attend an immersive, five-day program that comprises lectures, master classes, paper presentations, and mentoring sessions; and
+2.  to build long-lasting personal and scholarly relations in a celebrated, friendly, and productive environment.
 :::
 
 ## Our Sponsors
