@@ -31,7 +31,9 @@
       "schedule.yml"
     ],
     "program\\speakers\\index.qmd": [
-      "speakers.yml"
+      "speakers.yml",
+      "about/sponsors/sponsors.yml",
+      "../../about/sponsors/sponsors.yml"
     ]
   }
 }

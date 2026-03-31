@@ -5,8 +5,10 @@ listing:
   - id: speakers
     template: speakers.ejs
     contents: speakers.yml
+  - id: sponsors
+    template: ../../about/sponsors/sponsors-inline.ejs
+    contents: ../../about/sponsors/sponsors.yml
 ---
-
 
 ::: page-banner
 # Speakers
@@ -17,7 +19,9 @@ listing:
 ::: {#speakers .g-col-5}
 :::
 
-<div>
-
-</div>
 ::::::
+
+### Our Sponsors
+
+::: {#sponsors .g-col-12}
+:::
