@@ -13,7 +13,7 @@ listing:
   - id: countdown
     template: countdown.ejs
     contents: 
-      - datetime: 2026-03-30T17:00:00+00:00
+      - datetime: 2026-07-13T09:00:00+00:00
   - id: sponsors
     template: about/sponsors/sponsors.ejs
     contents: about/sponsors/sponsors.yml
@@ -34,10 +34,20 @@ The ICA Political Communication Summer School is a flagship program that brings 
 ### Location
 
 The Summer School will be hosted by the Centre for Democratic Politics, University of Leeds (UK) and take place at [Devonshire Hall](https://accommodation.leeds.ac.uk/residence/4/devonshire-hall), University of Leeds (UK), between 13-17 July 2026 ([View on Google Maps](https://www.google.com/maps?q=Devonshire+Hall+University+of+Leeds)).
+
+### Key Information
+
+- The Summer School begins Monday at 9:00, and ends Friday at 17:30.
+- Enrollment fee: £550 (covers accommodation at Devonshire Hall beginning Sunday night, with checkout on Saturday, as well as all lunches and refreshments).
+- Application deadline for participants: March 30 (17:00 GMT)
+- Notifications of application status: April 15
+
 :::
 
 ::: {.g-col-6 .img_margin}
 ![](/img/mycity.jpg){.img_block width="100%"}
+
+![](/img/backstudents.jpg){.img_block width="100%"}
 :::
 
 ::: {#sponsors .g-col-12}
