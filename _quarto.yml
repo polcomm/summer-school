@@ -4,6 +4,7 @@ project:
 
 website:
   title: "ICA PolComm Summer School"
+  google-analytics: "G-8XG0LMHFZZ" 
   sidebar: false
 
   navbar:
