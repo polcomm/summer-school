@@ -25,10 +25,10 @@ website:
 
       - text: Program
         menu:
-          #- text: Schedule
-          #  href: program/schedule/
           - text: Speakers
             href: program/speakers/
+          - text: Schedule
+            href: program/schedule/
           #- text: Participants
           #  href: program/participants/  
           #- text: Participants

@@ -1,32 +1,219 @@
 ---
 pagetitle: "Schedule"
 page-layout: full
-listing:
-  - id: schedule
-    template: schedule.ejs
-    contents: schedule.yml
 ---
 
+```{=html}
+<style>
+.sched-table-wrap { overflow-x: auto; margin: 2rem 2%; }
+
+.sched-table { width: 100%; border-collapse: collapse; table-layout: fixed; font-family: inherit; }
+
+.sched-table th {
+  background: #f5f5f0;
+  font-weight: 600;
+  font-size: 0.75rem;
+  padding: 10px 12px;
+  border: 0.5px solid #ddd;
+  text-align: center;
+  color: #333;
+}
+
+.sched-table td {
+  padding: 10px 12px;
+  border: 0.5px solid #ddd;
+  vertical-align: top;
+  font-size: 0.78rem;
+  color: #222;
+  line-height: 1.4;
+}
+
+.sched-table td.time-col {
+  font-weight: 600;
+  color: #666;
+  width: 58px;
+  text-align: center;
+  background: #f5f5f0;
+  font-size: 0.72rem;
+  white-space: nowrap;
+}
+
+.sched-table td.break-row {
+  color: #999;
+  font-style: italic;
+  text-align: center;
+}
+
+.lbl {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.lbl-keynote { background: #E1F5EE; color: #0F6E56; }
+.lbl-lecture { background: #E6F1FB; color: #185FA5; }
+
+.talk-title {
+  color: #1a1a1a;
+  line-height: 1.35;
+  margin-bottom: 4px;
+  font-size: 0.78rem;
+}
+
+.talk-speaker {
+  color: #777;
+  font-size: 0.7rem;
+  margin-top: 3px;
+}
+
+.event-buffet  { background: #E1F5EE; color: #0F6E56; text-align: center; font-weight: 500; }
+.event-wine    { background: #E6F1FB; color: #185FA5; text-align: center; font-weight: 500; }
+.event-closing { background: #E1F5EE; color: #0F6E56; text-align: center; font-weight: 500; }
+</style>
+```
 
 ::: {.page-banner}
 # Schedule
 :::
 
-::: grid
-
-::: {.g-col-12 style="margin-left: 2%;"}
-Please note that all session times are listed below in UTC.
+::: {style="margin-left: 2%; margin-top: 1rem; font-size: 0.9rem; color: #555;"}
+All session times are in local time (Leeds, UK — BST / UTC+1).
 :::
 
-::: {#schedule .g-col-6}
-:::
+::: {.sched-table-wrap}
 
-::: g-col-6
-![](/img/room3.jpg){.img_block width="99%"}
-:::
+```{=html}
+<table class="sched-table">
+  <thead>
+    <tr>
+      <th style="width:58px;"></th>
+      <th>Mon 13 July</th>
+      <th>Tue 14 July</th>
+      <th>Wed 15 July</th>
+      <th>Thu 16 July</th>
+      <th>Fri 17 July</th>
+    </tr>
+  </thead>
+  <tbody>
 
+    <tr>
+      <td class="time-col">08:00</td>
+      <td class="break-row" colspan="5">Morning pastries &amp; refreshments</td>
+    </tr>
 
-<div>
+    <tr>
+      <td class="time-col">08:30</td>
+      <td style="color:#999;font-style:italic;">Welcome &amp; ICA PCD overview</td>
+      <td>
+        <span class="lbl lbl-lecture">Lecture 1</span>
+        <div class="talk-title">How AI Is Transforming Research (Methods) in Political Communication</div>
+        <div class="talk-speaker">Jörg Matthes &middot; University of Vienna</div>
+      </td>
+      <td>
+        <span class="lbl lbl-lecture">Lecture 1</span>
+        <div class="talk-title">Does AI Undermine Democracy?</div>
+        <div class="talk-speaker">Claes de Vreese &middot; University of Amsterdam</div>
+      </td>
+      <td>
+        <span class="lbl lbl-lecture">Lecture 1</span>
+        <div class="talk-title">Propaganda and Public Opinion as a Participatory Communication Process</div>
+        <div class="talk-speaker">Christian Baden &middot; Hebrew University of Jerusalem</div>
+      </td>
+      <td>
+        <span class="lbl lbl-lecture">Lecture 1</span>
+        <div class="talk-title">Social Media in U.S. Elections</div>
+        <div class="talk-speaker">Talia Stroud &middot; University of Texas at Austin</div>
+      </td>
+    </tr>
 
-</div>
+    <tr>
+      <td class="time-col">09:00</td>
+      <td>
+        <span class="lbl lbl-keynote">Keynote</span>
+        <div class="talk-title">Political Communication and Democratic Ideals: The Precarious Role of the Citizen</div>
+        <div class="talk-speaker">Stephen Coleman &middot; University of Leeds</div>
+      </td>
+      <td colspan="4" style="color:#ccc;text-align:center;">—</td>
+    </tr>
+
+    <tr>
+      <td class="time-col">10:00</td>
+      <td class="break-row" colspan="5">Midmorning refreshments &amp; Coffee &amp; Careers</td>
+    </tr>
+
+    <tr>
+      <td class="time-col">11:30</td>
+      <td>
+        <span class="lbl lbl-lecture">Lecture 2</span>
+        <div class="talk-title">What Has Political Communication Got to Do with Democracy?</div>
+        <div class="talk-speaker">Regina Lawrence &middot; University of Oregon</div>
+      </td>
+      <td>
+        <span class="lbl lbl-lecture">Lecture 2</span>
+        <div class="talk-title">Algorithms, AI, and Power: Three Tensions for Democratic Citizenship</div>
+        <div class="talk-speaker">Sebastián Valenzuela &middot; PUC Chile</div>
+      </td>
+      <td>
+        <span class="lbl lbl-lecture">Lecture 2</span>
+        <div class="talk-title">Populist Communication and Democratic Ideals: New Directions in a Global Research Agenda</div>
+        <div class="talk-speaker">Lone Sorensen &middot; University of Leeds</div>
+      </td>
+      <td>
+        <span class="lbl lbl-lecture">Lecture 2</span>
+        <div class="talk-title">Perceptions of Misinformation Exposure, Social Media, and AI: Mapping the Shifting Targets of Cynicism</div>
+        <div class="talk-speaker">Dam Hee Kim &middot; Korea University</div>
+      </td>
+      <td>
+        <span class="lbl lbl-lecture">Lecture 2</span>
+        <div class="talk-title">Examining the Causes and Responses to Polarization: From Media Triggers to Democratic Interventions</div>
+        <div class="talk-speaker">Chris Fei Shen &middot; City University of Hong Kong</div>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="time-col">13:00</td>
+      <td class="break-row" colspan="5">Lunch / break (75 min)</td>
+    </tr>
+
+    <tr>
+      <td class="time-col">14:30</td>
+      <td class="break-row" colspan="5">Student presentations </td>
+    </tr>
+
+    <tr>
+      <td class="time-col">16:00</td>
+      <td style="color:#ccc;text-align:center;">—</td>
+      <td style="color:#ccc;text-align:center;">—</td>
+      <td style="color:#ccc;text-align:center;">—</td>
+      <td style="color:#ccc;text-align:center;">—</td>
+      <td class="event-closing">Certificates &amp; closing buffet<br/><small>(90 min)</small></td>
+    </tr>
+
+    <tr>
+      <td class="time-col">17:00</td>
+      <td class="event-buffet">Opening buffet<br/><small>(90 min)</small></td>
+      <td style="color:#ccc;text-align:center;">—</td>
+      <td style="color:#ccc;text-align:center;">—</td>
+      <td style="color:#ccc;text-align:center;">—</td>
+      <td style="color:#ccc;text-align:center;">—</td>
+    </tr>
+
+    <tr>
+      <td class="time-col">17:30</td>
+      <td style="color:#ccc;text-align:center;">—</td>
+      <td style="color:#ccc;text-align:center;">—</td>
+      <td class="event-wine">School of Media and Communication Wine Reception<br/><small>(90 min)</small></td>
+      <td style="color:#ccc;text-align:center;">—</td>
+      <td style="color:#ccc;text-align:center;">—</td>
+    </tr>
+
+  </tbody>
+</table>
+```
+
 :::

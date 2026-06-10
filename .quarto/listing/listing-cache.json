@@ -27,9 +27,6 @@
     "program\\participants\\index.qmd": [
       "speakers.yml"
     ],
-    "program\\schedule\\index.qmd": [
-      "schedule.yml"
-    ],
     "program\\speakers\\index.qmd": [
       "speakers.yml",
       "../../about/sponsors/sponsors.yml"
