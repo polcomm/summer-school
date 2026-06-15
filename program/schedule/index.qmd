@@ -123,8 +123,8 @@ The programme below provides an overview of the public academic schedule. Regist
       </td>
       <td>
         <span class="lbl lbl-lecture">Lecture 1</span>
-        <div class="talk-title">Propaganda and Public Opinion as a Participatory Communication Process</div>
-        <div class="talk-speaker">Christian Baden &middot; Hebrew University of Jerusalem</div>
+        <div class="talk-title">Perceptions of Misinformation Exposure, Social Media, and AI: Mapping the Shifting Targets of Cynicism</div>
+        <div class="talk-speaker">Dam Hee Kim &middot; Korea University</div>
       </td>
       <td>
         <span class="lbl lbl-lecture">Lecture 1</span>
@@ -167,8 +167,8 @@ The programme below provides an overview of the public academic schedule. Regist
       </td>
       <td>
         <span class="lbl lbl-lecture">Lecture 2</span>
-        <div class="talk-title">Perceptions of Misinformation Exposure, Social Media, and AI: Mapping the Shifting Targets of Cynicism</div>
-        <div class="talk-speaker">Dam Hee Kim &middot; Korea University</div>
+        <div class="talk-title">Propaganda and Public Opinion as a Participatory Communication Process</div>
+        <div class="talk-speaker">Christian Baden &middot; Hebrew University of Jerusalem</div>
       </td>
       <td>
         <span class="lbl lbl-lecture">Lecture 2</span>
