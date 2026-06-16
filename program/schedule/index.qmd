@@ -278,9 +278,13 @@ The programme below provides an overview of the public academic schedule. Regist
       <td class="time-col">09:30</td>
     </tr>
 
-    <!-- 10:00 removed — no separate mid-morning slot -->
+    <!-- 10:00 — Mid-morning refreshments (1 row) -->
+    <tr>
+      <td class="time-col">10:00</td>
+      <td class="break-row" colspan="5">Mid-morning refreshments</td>
+    </tr>
 
-    <!-- 10:30 — Coffee & Careers (rowspan 2 = 10:30–11:30 Mon; 10:15–11:15 Tue–Fri) -->
+    <!-- 10:30 — Coffee & Careers (rowspan 2 = 10:30–11:30 all days) -->
     <tr>
       <td class="time-col">10:30</td>
       <td rowspan="2" class="event-generic">Coffee &amp; Careers<br/><small>(10:30–11:30)</small></td>
@@ -448,6 +452,10 @@ The programme below provides an overview of the public academic schedule. Regist
       <div class="talk-speaker">Stephen Coleman &middot; University of Leeds</div>
     </div>
   </div>
+  <div class="day-card-row break">
+    <div class="day-card-time">10:15</div>
+    <div class="day-card-content">Mid-morning refreshments</div>
+  </div>
   <div class="day-card-row careers-row">
     <div class="day-card-time">10:30–11:30</div>
     <div class="day-card-content">Coffee &amp; Careers</div>
@@ -489,6 +497,10 @@ The programme below provides an overview of the public academic schedule. Regist
       <div class="talk-speaker">Jörg Matthes &middot; University of Vienna</div>
     </div>
   </div>
+  <div class="day-card-row break">
+    <div class="day-card-time">10:00–10:15</div>
+    <div class="day-card-content">Mid-morning refreshments</div>
+  </div>
   <div class="day-card-row careers-row">
     <div class="day-card-time">10:15–11:15</div>
     <div class="day-card-content">Coffee &amp; Careers</div>
@@ -525,6 +537,10 @@ The programme below provides an overview of the public academic schedule. Regist
       <div class="talk-title">Does AI Undermine Democracy?</div>
       <div class="talk-speaker">Claes de Vreese &middot; University of Amsterdam</div>
     </div>
+  </div>
+  <div class="day-card-row break">
+    <div class="day-card-time">10:00–10:15</div>
+    <div class="day-card-content">Mid-morning refreshments</div>
   </div>
   <div class="day-card-row careers-row">
     <div class="day-card-time">10:15–11:15</div>
@@ -567,6 +583,10 @@ The programme below provides an overview of the public academic schedule. Regist
       <div class="talk-speaker">Dam Hee Kim &middot; Korea University</div>
     </div>
   </div>
+  <div class="day-card-row break">
+    <div class="day-card-time">10:00–10:15</div>
+    <div class="day-card-content">Mid-morning refreshments</div>
+  </div>
   <div class="day-card-row careers-row">
     <div class="day-card-time">10:15–11:15</div>
     <div class="day-card-content">Coffee &amp; Careers</div>
@@ -606,7 +626,7 @@ The programme below provides an overview of the public academic schedule. Regist
   </div>
   <div class="day-card-row break">
     <div class="day-card-time">10:00–10:15</div>
-    <div class="day-card-content"></div>
+    <div class="day-card-content">Mid-morning refreshments</div>
   </div>
   <div class="day-card-row careers-row">
     <div class="day-card-time">10:15–11:15</div>
