@@ -1,79 +1,196 @@
 ---
 pagetitle: "Schedule"
 page-layout: full
+listing:
+  - id: sponsors
+    template: ../../about/sponsors/sponsors-inline.ejs
+    contents: ../../about/sponsors/sponsors.yml
 ---
 
 ```{=html}
 <style>
-.sched-table-wrap { overflow-x: auto; margin: 2rem 2%; }
+/*
+  Schedule page styles
+  Colours drawn from site SCSS:
+    $primary:   #0a3263  (navy)
+    green tint: #eaf4f1  (matches .text_block)
+    green text: #1d5c3a
+    navy tint:  rgba(10,50,99,0.08)
+    font:       Source Sans Pro (inherited)
+*/
 
-.sched-table { width: 100%; border-collapse: collapse; table-layout: fixed; font-family: inherit; }
+*, *::before, *::after { box-sizing: border-box; }
+
+.sched-wrap { margin: 2rem 2%; }
+
+/* ── Desktop table ──────────────────────────────────────── */
+.sched-table-wrap { overflow-x: auto; }
+
+.sched-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-family: inherit;
+  min-width: 620px;
+}
 
 .sched-table th {
-  background: #f5f5f0;
-  font-weight: 600;
+  background: rgba(10, 50, 99, 0.06);   /* navy tint */
+  font-weight: 700;
   font-size: 0.75rem;
   padding: 10px 12px;
-  border: 0.5px solid #ddd;
+  border: 1px solid rgba(10, 50, 99, 0.12);
   text-align: center;
-  color: #333;
+  color: #0a3263;                        /* $primary */
 }
 
 .sched-table td {
   padding: 10px 12px;
-  border: 0.5px solid #ddd;
+  border: 1px solid rgba(10, 50, 99, 0.1);
   vertical-align: top;
   font-size: 0.78rem;
-  color: #222;
   line-height: 1.4;
 }
 
 .sched-table td.time-col {
-  font-weight: 600;
-  color: #666;
-  width: 58px;
+  font-weight: 700;
+  color: #0a3263;
+  width: 56px;
+  min-width: 56px;
   text-align: center;
-  background: #f5f5f0;
+  background: rgba(10, 50, 99, 0.04);
   font-size: 0.72rem;
   white-space: nowrap;
+  vertical-align: top;
+  padding-top: 8px;
 }
 
 .sched-table td.break-row {
-  color: #999;
   font-style: italic;
+  opacity: 0.5;
   text-align: center;
+  vertical-align: middle;
 }
 
+/* ── Session labels ─────────────────────────────────────── */
 .lbl {
   display: inline-block;
-  font-size: 0.65rem;
-  font-weight: 600;
+  font-size: 0.62rem;
+  font-weight: 700;
   padding: 2px 7px;
-  border-radius: 4px;
+  border-radius: 3px;
   margin-bottom: 5px;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-
-.lbl-keynote { background: #E1F5EE; color: #0F6E56; }
-.lbl-lecture { background: #E6F1FB; color: #185FA5; }
+/* Keynote → green (matches .text_block / .abs-badge-keynote) */
+.lbl-keynote { background: #eaf4f1; color: #1d5c3a; }
+/* Masterclass → navy tint */
+.lbl-lecture { background: rgba(10, 50, 99, 0.08); color: #0a3263; }
 
 .talk-title {
-  color: #1a1a1a;
   line-height: 1.35;
   margin-bottom: 4px;
   font-size: 0.78rem;
+  font-weight: 600;
 }
-
 .talk-speaker {
-  color: #777;
   font-size: 0.7rem;
   margin-top: 3px;
+  opacity: 0.6;
+}
+.talk-time {
+  font-size: 0.68rem;
+  margin-top: 6px;
+  opacity: 0.35;
 }
 
-.event-buffet  { background: #E1F5EE; color: #0F6E56; text-align: center; font-weight: 500; }
-.event-wine    { background: #E6F1FB; color: #185FA5; text-align: center; font-weight: 500; }
-.event-closing { background: #E1F5EE; color: #0F6E56; text-align: center; font-weight: 500; }
+/* ── Special event cells ────────────────────────────────── */
+/* Buffet / closing → green */
+.event-buffet,
+.event-closing {
+  background: #eaf4f1;
+  color: #1d5c3a;
+  text-align: center;
+  font-weight: 500;
+  vertical-align: middle;
+}
+/* Wine reception → navy tint */
+.event-wine {
+  background: rgba(10, 50, 99, 0.06);
+  color: #0a3263;
+  text-align: center;
+  font-weight: 500;
+  vertical-align: middle;
+}
+/* Coffee & Careers → neutral */
+.event-generic {
+  background: rgba(0,0,0,0.02);
+  font-style: italic;
+  opacity: 0.6;
+  text-align: center;
+  vertical-align: middle;
+}
+td.empty { opacity: 0.15; text-align: center; vertical-align: middle; }
+
+/* ── Mobile cards ───────────────────────────────────────── */
+.mobile-sched { display: none; }
+
+.day-card {
+  margin-bottom: 2rem;
+  border: 1px solid rgba(10, 50, 99, 0.12);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.day-card-header {
+  background: rgba(10, 50, 99, 0.06);
+  padding: 10px 14px;
+  font-weight: 700;
+  font-size: 0.82rem;
+  color: #0a3263;
+  border-bottom: 1px solid rgba(10, 50, 99, 0.12);
+}
+.day-card-row {
+  display: flex;
+  align-items: flex-start;
+  padding: 10px 14px;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  gap: 10px;
+}
+.day-card-row:last-child { border-bottom: none; }
+.day-card-time {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #0a3263;
+  white-space: nowrap;
+  min-width: 80px;
+  padding-top: 2px;
+}
+.day-card-content {
+  flex: 1;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+.day-card-row.break .day-card-content {
+  font-style: italic;
+  opacity: 0.5;
+}
+/* Green rows — buffet & closing */
+.day-card-row.event-buffet-row,
+.day-card-row.event-closing-row  { background: #eaf4f1; }
+.day-card-row.event-buffet-row .day-card-content,
+.day-card-row.event-closing-row .day-card-content { color: #1d5c3a; font-weight: 500; }
+/* Navy tint — wine reception */
+.day-card-row.event-wine-row     { background: rgba(10, 50, 99, 0.06); }
+.day-card-row.event-wine-row .day-card-content    { color: #0a3263; font-weight: 500; }
+/* Subtle — Coffee & Careers */
+.day-card-row.careers-row        { background: rgba(0,0,0,0.02); }
+.day-card-row.careers-row .day-card-content { font-style: italic; opacity: 0.6; }
+
+@media (max-width: 680px) {
+  .sched-table-wrap { display: none; }
+  .mobile-sched     { display: block; }
+}
 </style>
 ```
 
@@ -81,11 +198,14 @@ page-layout: full
 # Schedule
 :::
 
-::: {style="margin-left: 2%; margin-top: 1rem; font-size: 0.9rem; color: #555;"}
+::: {.g-col-6 .text_block}
 All session times are in local time (Leeds, UK — BST / UTC+1).
 
-The programme below provides an overview of the public academic schedule. Registered participants will receive a detailed participant information pack, including preparatory readings, accommodation information, and guidance on the afternoon research-feedback sessions.
+The programme below provides an overview of the public academic schedule. Registered participants will receive a detailed participant information pack, including preparatory readings, accommodation information, and guidance on the afternoon research-feedback sessions. Click [here](https://polcomm.github.io/summer-school/program/abstracts/) for a detailed view of masterclasses' abstracts.
+
 :::
+
+::: {.sched-wrap}
 
 ::: {.sched-table-wrap}
 
@@ -93,7 +213,7 @@ The programme below provides an overview of the public academic schedule. Regist
 <table class="sched-table">
   <thead>
     <tr>
-      <th style="width:58px;"></th>
+      <th style="width:56px;"></th>
       <th>Mon 13 July</th>
       <th>Tue 14 July</th>
       <th>Wed 15 July</th>
@@ -103,119 +223,443 @@ The programme below provides an overview of the public academic schedule. Regist
   </thead>
   <tbody>
 
+    <!-- 08:00 — Morning pastries (1 row = 30 min) -->
     <tr>
       <td class="time-col">08:00</td>
       <td class="break-row" colspan="5">Morning pastries &amp; refreshments</td>
     </tr>
 
+    <!-- 08:30 — Mon: Welcome (1 row); Tue–Fri: Masterclass 1 starts (rowspan 3 = 08:30–10:00) -->
     <tr>
       <td class="time-col">08:30</td>
-      <td style="color:#999;font-style:italic;">Welcome &amp; ICA PCD overview</td>
-      <td>
-        <span class="lbl lbl-lecture">Lecture 1</span>
+      <td style="color:#999;font-style:italic;vertical-align:middle;">
+        Welcome &amp; ICA PCD overview<br/>
+        <small style="color:#bbb;">(08:30–09:15)</small>
+      </td>
+      <td rowspan="3">
+        <span class="lbl lbl-lecture">Masterclass 1</span>
         <div class="talk-title">How AI Is Transforming Research (Methods) in Political Communication</div>
         <div class="talk-speaker">Jörg Matthes &middot; University of Vienna</div>
+        <div class="talk-time">08:30–10:00</div>
       </td>
-      <td>
-        <span class="lbl lbl-lecture">Lecture 1</span>
+      <td rowspan="3">
+        <span class="lbl lbl-lecture">Masterclass 1</span>
         <div class="talk-title">Does AI Undermine Democracy?</div>
         <div class="talk-speaker">Claes de Vreese &middot; University of Amsterdam</div>
+        <div class="talk-time">08:30–10:00</div>
       </td>
-      <td>
-        <span class="lbl lbl-lecture">Lecture 1</span>
+      <td rowspan="3">
+        <span class="lbl lbl-lecture">Masterclass 1</span>
         <div class="talk-title">Perceptions of Misinformation Exposure, Social Media, and AI: Mapping the Shifting Targets of Cynicism</div>
         <div class="talk-speaker">Dam Hee Kim &middot; Korea University</div>
+        <div class="talk-time">08:30–10:00</div>
       </td>
-      <td>
-        <span class="lbl lbl-lecture">Lecture 1</span>
+      <td rowspan="3">
+        <span class="lbl lbl-lecture">Masterclass 1</span>
         <div class="talk-title">Social Media in U.S. Elections</div>
         <div class="talk-speaker">Talia Stroud &middot; University of Texas at Austin</div>
+        <div class="talk-time">08:30–10:00</div>
       </td>
     </tr>
 
+    <!-- 09:00 — Mon: Keynote starts (rowspan 2 = 09:00–10:00); Tue–Fri covered -->
     <tr>
       <td class="time-col">09:00</td>
-      <td>
+      <td rowspan="2">
         <span class="lbl lbl-keynote">Keynote</span>
         <div class="talk-title">Political Communication and Democratic Ideals: The Precarious Role of the Citizen</div>
         <div class="talk-speaker">Stephen Coleman &middot; University of Leeds</div>
+        <div class="talk-time">09:15–10:15</div>
       </td>
-      <td colspan="4" style="color:#ccc;text-align:center;">—</td>
     </tr>
 
+    <!-- 09:30 — Mon: Keynote continued; Tue–Fri covered -->
+    <tr>
+      <td class="time-col">09:30</td>
+    </tr>
+
+    <!-- 10:00 — Mid-morning refreshments (1 row) -->
     <tr>
       <td class="time-col">10:00</td>
-      <td class="break-row" colspan="5">Midmorning refreshments &amp; Coffee &amp; Careers</td>
+      <td class="break-row" colspan="5">Mid-morning refreshments</td>
     </tr>
 
+    <!-- 10:30 — Coffee & Careers (rowspan 2 = 10:30–11:30 all days) -->
+    <tr>
+      <td class="time-col">10:30</td>
+      <td rowspan="2" class="event-generic">Coffee &amp; Careers<br/><small>(10:30–11:30)</small></td>
+      <td rowspan="2" class="event-generic">Coffee &amp; Careers<br/><small>(10:15–11:15)</small></td>
+      <td rowspan="2" class="event-generic">Coffee &amp; Careers<br/><small>(10:15–11:15)</small></td>
+      <td rowspan="2" class="event-generic">Coffee &amp; Careers<br/><small>(10:15–11:15)</small></td>
+      <td rowspan="2" class="event-generic">Coffee &amp; Careers<br/><small>(10:15–11:15)</small></td>
+    </tr>
+
+    <!-- 11:00 — transition / buffer; all cols covered by rowspan -->
+    <tr>
+      <td class="time-col">11:00</td>
+    </tr>
+
+    <!-- 11:30 — Masterclass 2 all days (rowspan 3 = 11:30–13:00) -->
     <tr>
       <td class="time-col">11:30</td>
-      <td>
-        <span class="lbl lbl-lecture">Lecture 2</span>
+      <td rowspan="3">
+        <span class="lbl lbl-lecture">Masterclass 2</span>
         <div class="talk-title">What Has Political Communication Got to Do with Democracy?</div>
         <div class="talk-speaker">Regina Lawrence &middot; University of Oregon</div>
+        <div class="talk-time">11:30–13:00</div>
       </td>
-      <td>
-        <span class="lbl lbl-lecture">Lecture 2</span>
+      <td rowspan="3">
+        <span class="lbl lbl-lecture">Masterclass 2</span>
         <div class="talk-title">Algorithms, AI, and Power: Three Tensions for Democratic Citizenship</div>
         <div class="talk-speaker">Sebastián Valenzuela &middot; PUC Chile</div>
+        <div class="talk-time">11:30–13:00</div>
       </td>
-      <td>
-        <span class="lbl lbl-lecture">Lecture 2</span>
+      <td rowspan="3">
+        <span class="lbl lbl-lecture">Masterclass 2</span>
         <div class="talk-title">Populist Communication and Democratic Ideals: New Directions in a Global Research Agenda</div>
         <div class="talk-speaker">Lone Sorensen &middot; University of Leeds</div>
+        <div class="talk-time">11:30–13:00</div>
       </td>
-      <td>
-        <span class="lbl lbl-lecture">Lecture 2</span>
+      <td rowspan="3">
+        <span class="lbl lbl-lecture">Masterclass 2</span>
         <div class="talk-title">Propaganda and Public Opinion as a Participatory Communication Process</div>
         <div class="talk-speaker">Christian Baden &middot; Hebrew University of Jerusalem</div>
+        <div class="talk-time">11:30–13:00</div>
       </td>
-      <td>
-        <span class="lbl lbl-lecture">Lecture 2</span>
+      <td rowspan="3">
+        <span class="lbl lbl-lecture">Masterclass 2</span>
         <div class="talk-title">Examining the Causes and Responses to Polarization: From Media Triggers to Democratic Interventions</div>
         <div class="talk-speaker">Chris Fei Shen &middot; City University of Hong Kong</div>
+        <div class="talk-time">11:30–13:00</div>
+      </td>
+    </tr>
+    <tr><td class="time-col">12:00</td></tr>
+    <tr><td class="time-col">12:30</td></tr>
+
+    <!-- 13:00 — Lunch (rowspan 3 = 13:00–14:30, covering the 14:15 start of afternoon) -->
+    <tr>
+      <td class="time-col">13:00</td>
+      <td class="break-row" colspan="5" rowspan="3">
+        Lunch / break<br/><small>(13:00–14:15)</small>
+      </td>
+    </tr>
+    <tr><td class="time-col">13:30</td></tr>
+    <tr><td class="time-col">14:00</td></tr>
+
+    <!-- 14:30 — Student presentations (rowspan 3 = 14:30–16:00) -->
+    <tr>
+      <td class="time-col">14:30</td>
+      <td class="break-row" colspan="5" rowspan="3">
+        Student presentations &amp; mentoring<br/><small>(14:15–16:00)</small>
+      </td>
+    </tr>
+    <tr><td class="time-col">15:00</td></tr>
+    <tr><td class="time-col">15:30</td></tr>
+
+    <!-- 16:00 — Fri: Closing buffet rowspan 3 (16:00–17:30); others empty -->
+    <tr>
+      <td class="time-col">16:00</td>
+      <td class="empty">—</td>
+      <td class="empty">—</td>
+      <td class="empty">—</td>
+      <td class="empty">—</td>
+      <td rowspan="3" class="event-closing">
+        Certificates &amp; closing buffet<br/><small>(16:00–17:30)</small>
       </td>
     </tr>
 
+    <!-- 16:30 -->
     <tr>
-      <td class="time-col">13:00</td>
-      <td class="break-row" colspan="5">Lunch / break (75 min)</td>
+      <td class="time-col">16:30</td>
+      <td class="empty">—</td>
+      <td class="empty">—</td>
+      <td class="empty">—</td>
+      <td class="empty">—</td>
     </tr>
 
-    <tr>
-      <td class="time-col">14:30</td>
-      <td class="break-row" colspan="5">Student presentations </td>
-    </tr>
-
-    <tr>
-      <td class="time-col">16:00</td>
-      <td style="color:#ccc;text-align:center;">—</td>
-      <td style="color:#ccc;text-align:center;">—</td>
-      <td style="color:#ccc;text-align:center;">—</td>
-      <td style="color:#ccc;text-align:center;">—</td>
-      <td class="event-closing">Certificates &amp; closing buffet<br/><small>(90 min)</small></td>
-    </tr>
-
+    <!-- 17:00 — Mon: Opening buffet rowspan 3 (17:00–18:30); Fri covered by closing buffet rowspan -->
+    <!-- Cells needed: time | Mon(buffet,rs3) | Tue | Wed | Thu  [Fri covered] -->
     <tr>
       <td class="time-col">17:00</td>
-      <td class="event-buffet">Opening buffet<br/><small>(90 min)</small></td>
-      <td style="color:#ccc;text-align:center;">—</td>
-      <td style="color:#ccc;text-align:center;">—</td>
-      <td style="color:#ccc;text-align:center;">—</td>
-      <td style="color:#ccc;text-align:center;">—</td>
+      <td rowspan="3" class="event-buffet">
+        Opening buffet<br/><small>(17:00–18:30)</small>
+      </td>
+      <td class="empty">—</td>
+      <td class="empty">—</td>
+      <td class="empty">—</td>
+      <!-- Fri: covered by closing buffet rowspan from 16:00 -->
     </tr>
 
+    <!-- 17:30 — Mon covered by buffet; Fri covered by closing; Wed: wine reception rowspan 3 (17:30–19:00) -->
+    <!-- Cells needed: time | Tue | Wed(wine,rs3) | Thu  [Mon & Fri covered] -->
     <tr>
       <td class="time-col">17:30</td>
-      <td style="color:#ccc;text-align:center;">—</td>
-      <td style="color:#ccc;text-align:center;">—</td>
-      <td class="event-wine">School of Media and Communication Wine Reception<br/><small>(90 min)</small></td>
-      <td style="color:#ccc;text-align:center;">—</td>
-      <td style="color:#ccc;text-align:center;">—</td>
+      <td class="empty">—</td>
+      <td rowspan="3" class="event-wine">
+        School of Media &amp; Communication<br/>Wine Reception<br/><small>(17:30–19:00)</small>
+      </td>
+      <td class="empty">—</td>
+      <!-- Mon: covered by buffet rowspan; Fri: covered by closing rowspan -->
+    </tr>
+
+    <!-- 18:00 — Mon covered by buffet; Wed covered by wine; Fri covered by closing -->
+    <!-- Cells needed: time | Tue | Thu  [Mon, Wed, Fri covered] -->
+    <tr>
+      <td class="time-col">18:00</td>
+      <td class="empty">—</td>
+      <!-- Wed: covered by wine rowspan -->
+      <td class="empty">—</td>
+      <!-- Mon: covered; Fri: covered -->
+    </tr>
+
+    <!-- 18:30 — Mon buffet ends (rowspan 3 from 17:00 = rows 17:00, 17:30, 18:00 — ends before 18:30) -->
+    <!-- Wed covered by wine (18:30 is 3rd row of wine: 17:30, 18:00, 18:30) -->
+    <!-- Cells needed: time | Mon | Tue | Thu | Fri  [Wed covered] -->
+    <tr>
+      <td class="time-col">18:30</td>
+      <td class="empty">—</td>
+      <td class="empty">—</td>
+      <!-- Wed: covered by wine rowspan (last row) -->
+      <td class="empty">—</td>
+      <td class="empty">—</td>
     </tr>
 
   </tbody>
 </table>
 ```
 
+:::
+
+::: {.mobile-sched}
+
+```{=html}
+<!-- MONDAY -->
+<div class="day-card">
+  <div class="day-card-header">Monday, 13 July &mdash; Democratic ideals and the field of political communication</div>
+  <div class="day-card-row break">
+    <div class="day-card-time">08:00</div>
+    <div class="day-card-content">Morning pastries &amp; refreshments</div>
+  </div>
+  <div class="day-card-row">
+    <div class="day-card-time">08:30–09:15</div>
+    <div class="day-card-content" style="color:#999;font-style:italic;">Welcome &amp; ICA PCD overview</div>
+  </div>
+  <div class="day-card-row">
+    <div class="day-card-time">09:15–10:15</div>
+    <div class="day-card-content">
+      <span class="lbl lbl-keynote">Keynote</span>
+      <div class="talk-title">Political Communication and Democratic Ideals: The Precarious Role of the Citizen</div>
+      <div class="talk-speaker">Stephen Coleman &middot; University of Leeds</div>
+    </div>
+  </div>
+  <div class="day-card-row break">
+    <div class="day-card-time">10:15</div>
+    <div class="day-card-content">Mid-morning refreshments</div>
+  </div>
+  <div class="day-card-row careers-row">
+    <div class="day-card-time">10:30–11:30</div>
+    <div class="day-card-content">Coffee &amp; Careers</div>
+  </div>
+  <div class="day-card-row">
+    <div class="day-card-time">11:30–13:00</div>
+    <div class="day-card-content">
+      <span class="lbl lbl-lecture">Masterclass 2</span>
+      <div class="talk-title">What Has Political Communication Got to Do with Democracy?</div>
+      <div class="talk-speaker">Regina Lawrence &middot; University of Oregon</div>
+    </div>
+  </div>
+  <div class="day-card-row break">
+    <div class="day-card-time">13:00–14:15</div>
+    <div class="day-card-content">Lunch / break</div>
+  </div>
+  <div class="day-card-row break">
+    <div class="day-card-time">14:15–16:00</div>
+    <div class="day-card-content">Student presentations &amp; mentoring</div>
+  </div>
+  <div class="day-card-row event-buffet-row">
+    <div class="day-card-time">17:00–18:30</div>
+    <div class="day-card-content">Opening buffet</div>
+  </div>
+</div>
+
+<!-- TUESDAY -->
+<div class="day-card">
+  <div class="day-card-header">Tuesday, 14 July &mdash; AI, algorithms, research methods and democratic citizenship</div>
+  <div class="day-card-row break">
+    <div class="day-card-time">08:00</div>
+    <div class="day-card-content">Morning pastries &amp; refreshments</div>
+  </div>
+  <div class="day-card-row">
+    <div class="day-card-time">08:30–10:00</div>
+    <div class="day-card-content">
+      <span class="lbl lbl-lecture">Masterclass 1</span>
+      <div class="talk-title">How AI Is Transforming Research (Methods) in Political Communication</div>
+      <div class="talk-speaker">Jörg Matthes &middot; University of Vienna</div>
+    </div>
+  </div>
+  <div class="day-card-row break">
+    <div class="day-card-time">10:00–10:15</div>
+    <div class="day-card-content">Mid-morning refreshments</div>
+  </div>
+  <div class="day-card-row careers-row">
+    <div class="day-card-time">10:15–11:15</div>
+    <div class="day-card-content">Coffee &amp; Careers</div>
+  </div>
+  <div class="day-card-row">
+    <div class="day-card-time">11:30–13:00</div>
+    <div class="day-card-content">
+      <span class="lbl lbl-lecture">Masterclass 2</span>
+      <div class="talk-title">Algorithms, AI, and Power: Three Tensions for Democratic Citizenship</div>
+      <div class="talk-speaker">Sebastián Valenzuela &middot; PUC Chile</div>
+    </div>
+  </div>
+  <div class="day-card-row break">
+    <div class="day-card-time">13:00–14:15</div>
+    <div class="day-card-content">Lunch / break</div>
+  </div>
+  <div class="day-card-row break">
+    <div class="day-card-time">14:15–16:00</div>
+    <div class="day-card-content">Student presentations &amp; mentoring</div>
+  </div>
+</div>
+
+<!-- WEDNESDAY -->
+<div class="day-card">
+  <div class="day-card-header">Wednesday, 15 July &mdash; AI, populism and democratic communication</div>
+  <div class="day-card-row break">
+    <div class="day-card-time">08:00</div>
+    <div class="day-card-content">Morning pastries &amp; refreshments</div>
+  </div>
+  <div class="day-card-row">
+    <div class="day-card-time">08:30–10:00</div>
+    <div class="day-card-content">
+      <span class="lbl lbl-lecture">Masterclass 1</span>
+      <div class="talk-title">Does AI Undermine Democracy?</div>
+      <div class="talk-speaker">Claes de Vreese &middot; University of Amsterdam</div>
+    </div>
+  </div>
+  <div class="day-card-row break">
+    <div class="day-card-time">10:00–10:15</div>
+    <div class="day-card-content">Mid-morning refreshments</div>
+  </div>
+  <div class="day-card-row careers-row">
+    <div class="day-card-time">10:15–11:15</div>
+    <div class="day-card-content">Coffee &amp; Careers</div>
+  </div>
+  <div class="day-card-row">
+    <div class="day-card-time">11:30–13:00</div>
+    <div class="day-card-content">
+      <span class="lbl lbl-lecture">Masterclass 2</span>
+      <div class="talk-title">Populist Communication and Democratic Ideals: New Directions in a Global Research Agenda</div>
+      <div class="talk-speaker">Lone Sorensen &middot; University of Leeds</div>
+    </div>
+  </div>
+  <div class="day-card-row break">
+    <div class="day-card-time">13:00–14:15</div>
+    <div class="day-card-content">Lunch / break</div>
+  </div>
+  <div class="day-card-row break">
+    <div class="day-card-time">14:15–16:00</div>
+    <div class="day-card-content">Student presentations &amp; mentoring</div>
+  </div>
+  <div class="day-card-row event-wine-row">
+    <div class="day-card-time">17:30–19:00</div>
+    <div class="day-card-content">School of Media &amp; Communication Wine Reception</div>
+  </div>
+</div>
+
+<!-- THURSDAY -->
+<div class="day-card">
+  <div class="day-card-header">Thursday, 16 July &mdash; Misinformation, propaganda and public opinion</div>
+  <div class="day-card-row break">
+    <div class="day-card-time">08:00</div>
+    <div class="day-card-content">Morning pastries &amp; refreshments</div>
+  </div>
+  <div class="day-card-row">
+    <div class="day-card-time">08:30–10:00</div>
+    <div class="day-card-content">
+      <span class="lbl lbl-lecture">Masterclass 1</span>
+      <div class="talk-title">Perceptions of Misinformation Exposure, Social Media, and AI: Mapping the Shifting Targets of Cynicism</div>
+      <div class="talk-speaker">Dam Hee Kim &middot; Korea University</div>
+    </div>
+  </div>
+  <div class="day-card-row break">
+    <div class="day-card-time">10:00–10:15</div>
+    <div class="day-card-content">Mid-morning refreshments</div>
+  </div>
+  <div class="day-card-row careers-row">
+    <div class="day-card-time">10:15–11:15</div>
+    <div class="day-card-content">Coffee &amp; Careers</div>
+  </div>
+  <div class="day-card-row">
+    <div class="day-card-time">11:30–13:00</div>
+    <div class="day-card-content">
+      <span class="lbl lbl-lecture">Masterclass 2</span>
+      <div class="talk-title">Propaganda and Public Opinion as a Participatory Communication Process</div>
+      <div class="talk-speaker">Christian Baden &middot; Hebrew University of Jerusalem</div>
+    </div>
+  </div>
+  <div class="day-card-row break">
+    <div class="day-card-time">13:00–14:15</div>
+    <div class="day-card-content">Lunch / break</div>
+  </div>
+  <div class="day-card-row break">
+    <div class="day-card-time">14:15–16:00</div>
+    <div class="day-card-content">Student presentations &amp; mentoring</div>
+  </div>
+</div>
+
+<!-- FRIDAY -->
+<div class="day-card">
+  <div class="day-card-header">Friday, 17 July &mdash; Elections, polarization and democratic interventions</div>
+  <div class="day-card-row break">
+    <div class="day-card-time">08:00</div>
+    <div class="day-card-content">Morning pastries &amp; refreshments</div>
+  </div>
+  <div class="day-card-row">
+    <div class="day-card-time">08:30–10:00</div>
+    <div class="day-card-content">
+      <span class="lbl lbl-lecture">Masterclass 1</span>
+      <div class="talk-title">Social Media in U.S. Elections</div>
+      <div class="talk-speaker">Talia Stroud &middot; University of Texas at Austin</div>
+    </div>
+  </div>
+  <div class="day-card-row break">
+    <div class="day-card-time">10:00–10:15</div>
+    <div class="day-card-content">Mid-morning refreshments</div>
+  </div>
+  <div class="day-card-row careers-row">
+    <div class="day-card-time">10:15–11:15</div>
+    <div class="day-card-content">Coffee &amp; Careers</div>
+  </div>
+  <div class="day-card-row">
+    <div class="day-card-time">11:30–13:00</div>
+    <div class="day-card-content">
+      <span class="lbl lbl-lecture">Masterclass 2</span>
+      <div class="talk-title">Examining the Causes and Responses to Polarization: From Media Triggers to Democratic Interventions</div>
+      <div class="talk-speaker">Chris Fei Shen &middot; City University of Hong Kong</div>
+    </div>
+  </div>
+  <div class="day-card-row break">
+    <div class="day-card-time">13:00–14:15</div>
+    <div class="day-card-content">Lunch / break</div>
+  </div>
+  <div class="day-card-row break">
+    <div class="day-card-time">14:15–16:00</div>
+    <div class="day-card-content">Student presentations &amp; mentoring</div>
+  </div>
+  <div class="day-card-row event-closing-row">
+    <div class="day-card-time">16:00–17:30</div>
+    <div class="day-card-content">Certificates &amp; closing buffet</div>
+  </div>
+</div>
+```
+
+:::
+
+:::
+
+### Our Sponsors
+
+::: {#sponsors .g-col-12}
 :::

@@ -1,0 +1,33 @@
+```{=html}
+<div class="abstracts-wrap">
+
+<% for (const item of items) { %>
+
+  <% if (item["day-header"]) { %>
+  <div class="abs-day-header"><%- item["day-header"] %></div>
+  <div class="abs-day-theme"><%- item.theme %></div>
+  <% } %>
+
+  <div class="abs-card">
+    <div class="abs-photo">
+      <a href="<%- item.href %>" target="_blank">
+        <img src="<%- item.thumbnail %>" alt="<%- item.name %>" />
+      </a>
+    </div>
+    <div class="abs-body">
+      <div class="abs-badge <%- item.type === 'Keynote' ? 'abs-badge-keynote' : '' %>">
+        <%- item.type %> &mdash; <%- item.time %>
+      </div>
+      <div class="abs-title"><%- item.title %></div>
+      <div class="abs-speaker">
+        <a href="<%- item.href %>" target="_blank"><%- item.name %></a>
+        &middot; <%- item.affiliation %>
+      </div>
+      <div class="abs-text"><%- item.abstract %></div>
+    </div>
+  </div>
+
+<% } %>
+
+</div>
+```

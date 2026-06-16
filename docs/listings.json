@@ -8,27 +8,7 @@
     "items": []
   },
   {
-    "listing": "/participation/keydates/index.html",
-    "items": []
-  },
-  {
-    "listing": "/index.html",
-    "items": []
-  },
-  {
-    "listing": "/about/sponsors/sponsors.html",
-    "items": []
-  },
-  {
-    "listing": "/about/organizers.html",
-    "items": []
-  },
-  {
-    "listing": "/about/about.html",
-    "items": []
-  },
-  {
-    "listing": "/about/sponsors/index.html",
+    "listing": "/participation/call.html",
     "items": []
   },
   {
@@ -36,7 +16,35 @@
     "items": []
   },
   {
-    "listing": "/participation/call.html",
+    "listing": "/about/sponsors/index.html",
+    "items": []
+  },
+  {
+    "listing": "/about/about.html",
+    "items": []
+  },
+  {
+    "listing": "/about/organizers.html",
+    "items": []
+  },
+  {
+    "listing": "/about/sponsors/sponsors.html",
+    "items": []
+  },
+  {
+    "listing": "/index.html",
+    "items": []
+  },
+  {
+    "listing": "/participation/keydates/index.html",
+    "items": []
+  },
+  {
+    "listing": "/program/abstracts/index.html",
+    "items": []
+  },
+  {
+    "listing": "/program/schedule/index.html",
     "items": []
   }
 ]

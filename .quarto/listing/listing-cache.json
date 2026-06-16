@@ -24,8 +24,15 @@
     "participation\\keydates\\index.qmd": [
       "keydates.yml"
     ],
+    "program\\abstracts\\index.qmd": [
+      "abstracts.yml",
+      "../../about/sponsors/sponsors.yml"
+    ],
     "program\\participants\\index.qmd": [
       "speakers.yml"
+    ],
+    "program\\schedule\\index.qmd": [
+      "../../about/sponsors/sponsors.yml"
     ],
     "program\\speakers\\index.qmd": [
       "speakers.yml",
