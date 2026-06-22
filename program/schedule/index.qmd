@@ -233,7 +233,7 @@ The programme below provides an overview of the public academic schedule. Regist
     <tr>
       <td class="time-col">08:30</td>
       <td style="color:#999;font-style:italic;vertical-align:middle;">
-        Welcome &amp; ICA PCD overview<br/>
+        Welcome: Eike Mark Rinke & Kate Kenski<br/>
         <small style="color:#bbb;">(08:30–09:15)</small>
       </td>
       <td rowspan="3">
@@ -442,7 +442,7 @@ The programme below provides an overview of the public academic schedule. Regist
   </div>
   <div class="day-card-row">
     <div class="day-card-time">08:30–09:15</div>
-    <div class="day-card-content" style="color:#999;font-style:italic;">Welcome &amp; ICA PCD overview</div>
+    <div class="day-card-content" style="color:#999;font-style:italic;">Welcome: Eike Mark Rinke & Kate Kenski</div>
   </div>
   <div class="day-card-row">
     <div class="day-card-time">09:15–10:15</div>
