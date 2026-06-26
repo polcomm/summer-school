@@ -31,8 +31,8 @@ website:
             href: program/schedule/
           - text: Masterclasses' Abstracts
             href: program/abstracts/          
-          #- text: Participants
-          #  href: program/participants/  
+          - text: Participants
+            href: program/participants/  
           #- text: Participants
           #  href: program/participants/
 
