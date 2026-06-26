@@ -78,9 +78,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-name','listing-affiliation','listing-href','listing-thumbnail','listing-social',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-name','listing-affiliation','listing-href','listing-thumbnail','listing-bio','listing-social',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-name","listing-affiliation","listing-href","listing-thumbnail","listing-social"],
+      searchColumns: ["listing-name","listing-affiliation","listing-href","listing-thumbnail","listing-bio","listing-social"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -216,8 +216,8 @@ window.Quarto = {
 
 
 
-<section id="speakers" class="level1 page-banner">
-<h1>Speakers</h1>
+<section id="participants" class="level1 page-banner">
+<h1>Participants</h1>
 </section>
 <div class="grid">
 <div>
@@ -226,244 +226,912 @@ window.Quarto = {
 </div>
 
 
+
+
 <div class="quarto-listing quarto-listing-container-custom" id="listing-listing">
-<div class="sponsorsFooter">
-      <ul>
+<style>
+  .students-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 1rem 0;
+  }
+
+  @media (max-width: 768px) {
+    .students-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .student-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .student-header {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+    margin-bottom: 0;
+  }
+
+  .student-photo-link {
+    flex-shrink: 0;
+  }
+
+  .student-photo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .student-meta {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .student-name {
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0 0 0.15rem 0;
+    color: #0a3263;
+    line-height: 1.25;
+  }
+
+  .student-affiliation {
+    font-size: 0.875rem;
+    color: #495057;
+    margin: 0 0 0.4rem 0;
+    line-height: 1.3;
+  }
+
+  .student-socials {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    align-items: center;
+  }
+
+  .student-socials li {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .student-socials a {
+    color: #0a3263;
+    font-size: 0.95rem;
+    opacity: 0.75;
+    text-decoration: none;
+    transition: opacity 0.15s;
+    display: flex;
+    align-items: center;
+  }
+
+  .student-socials a:hover {
+    opacity: 1;
+    color: #0a3263;
+  }
+
+  .bsky-icon {
+    width: 0.95em;
+    height: 0.95em;
+    fill: currentColor;
+    vertical-align: middle;
+  }
+
+  .student-bio {
+    background-color: #eaf6e8;
+    border-left: 3px solid #3fb618;
+    padding: 0.7rem 0.9rem;
+    margin-top: 0.7rem;
+    font-size: 0.83rem;
+    line-height: 1.55;
+    color: #2d4a28;
+    border-radius: 0 4px 4px 0;
+  }
+</style>
+
+<div class="students-grid">
+  
+  <div class="student-card">
+    <div class="student-header">
+      <a class="student-photo-link" href="https://comm.arizona.edu/person/kawther-albader" target="_blank">
+        <img class="student-photo" src="img/kawther.png" alt="Kawther Albader picture">
+      </a>
+      <div class="student-meta">
+        <p class="student-name">Kawther Albader</p>
         
-                            <li><a href="https://sgpp.arizona.edu/person/kate-kenski" target="_blank" class=""><img width="200" height="200" style="border-radius: 40%;" class="" src="img/kate.jpg" alt="Kate Kenski picture"></a>
-                            
-                            <p><strong> Kate Kenski </strong> <br>
-                            The University of Arizona <br>
-                            </p><ul>
-                            
-                            
-                              <li class="socialIcons">
-                               
-                      <a class="" href="https://politicalcommunication.org/">
-                        <i class="bi bi-globe"></i> 
-                      </a>
-                  
-                  
-                  
-                 
-                             
-                             
-                             </li>
-                          
-                              <li class="socialIcons">
-                              
-                  
-                      <a class="" href="https://politicalcommunication.org/">
-                        <i class="bi bi-github"></i> 
-                      </a>
-                  
-                  
-                 
-                             
-                             
-                             </li>
-                          
-                              <li class="socialIcons">
-                              
-                  
-                  
-                      <a class="" href="https://politicalcommunication.org/">
-                        <i class="bi bi-twitter"></i> 
-                      </a>
-                              
-                 
-                             
-                             
-                             </li>
-                          
-                              <li class="socialIcons">
-                              
-                  
-                  
-                  
-                      <a class="" href="https://politicalcommunication.org/">
-                        <i class="bi bi-linkedin"></i> 
-                      </a>
-                             
-                             
-                             
-                             </li>
-                          
-                              <li class="socialIcons">
-                              
-                  
-                  
-                 
-                             
-                              
-                      <a class="" href="https://politicalcommunication.org/">
-                        <i class="bi bi-mastodon"></i> 
-                      </a>
-                             
-                             </li>
-                          
-                           </ul>
-                            <p></p>
-                            </li>
-        
-                            <li><a href="https://example.com" target="_blank" class=""><img width="200" height="200" style="border-radius: 40%;" class="" src="img/user.png" alt="Example Name picture"></a>
-                            
-                            <p><strong> Example Name </strong> <br>
-                            ICA <br>
-                            </p><ul>
-                            
-                            
-                              <li class="socialIcons">
-                               
-                      <a class="" href="https://politicalcommunication.org/">
-                        <i class="bi bi-globe"></i> 
-                      </a>
-                  
-                  
-                  
-                 
-                             
-                             
-                             </li>
-                          
-                              <li class="socialIcons">
-                              
-                  
-                      <a class="" href="https://politicalcommunication.org/">
-                        <i class="bi bi-github"></i> 
-                      </a>
-                  
-                  
-                 
-                             
-                             
-                             </li>
-                          
-                              <li class="socialIcons">
-                              
-                  
-                  
-                      <a class="" href="https://politicalcommunication.org/">
-                        <i class="bi bi-twitter"></i> 
-                      </a>
-                              
-                 
-                             
-                             
-                             </li>
-                          
-                              <li class="socialIcons">
-                              
-                  
-                  
-                  
-                      <a class="" href="https://politicalcommunication.org/">
-                        <i class="bi bi-linkedin"></i> 
-                      </a>
-                             
-                             
-                             
-                             </li>
-                          
-                              <li class="socialIcons">
-                              
-                  
-                  
-                 
-                             
-                              
-                      <a class="" href="https://politicalcommunication.org/">
-                        <i class="bi bi-mastodon"></i> 
-                      </a>
-                             
-                             </li>
-                          
-                           </ul>
-                            <p></p>
-                            </li>
-        
-                            <li><a href="https://example.com" target="_blank" class=""><img width="200" height="200" style="border-radius: 40%;" class="" src="img/user.png" alt="Example Name picture"></a>
-                            
-                            <p><strong> Example Name </strong> <br>
-                            ICA <br>
-                            </p><ul>
-                            
-                            
-                              <li class="socialIcons">
-                               
-                      <a class="" href="https://politicalcommunication.org/">
-                        <i class="bi bi-globe"></i> 
-                      </a>
-                  
-                  
-                  
-                 
-                             
-                             
-                             </li>
-                          
-                              <li class="socialIcons">
-                              
-                  
-                      <a class="" href="https://politicalcommunication.org/">
-                        <i class="bi bi-github"></i> 
-                      </a>
-                  
-                  
-                 
-                             
-                             
-                             </li>
-                          
-                              <li class="socialIcons">
-                              
-                  
-                  
-                      <a class="" href="https://politicalcommunication.org/">
-                        <i class="bi bi-twitter"></i> 
-                      </a>
-                              
-                 
-                             
-                             
-                             </li>
-                          
-                              <li class="socialIcons">
-                              
-                  
-                  
-                  
-                      <a class="" href="https://politicalcommunication.org/">
-                        <i class="bi bi-linkedin"></i> 
-                      </a>
-                             
-                             
-                             
-                             </li>
-                          
-                              <li class="socialIcons">
-                              
-                  
-                  
-                 
-                             
-                              
-                      <a class="" href="https://politicalcommunication.org/">
-                        <i class="bi bi-mastodon"></i> 
-                      </a>
-                             
-                             </li>
-                          
-                           </ul>
-                            <p></p>
-                            </li>
-        
-      </ul>
+        <ul class="student-socials">
+          
+          <li>
+            
+            <a href="https://comm.arizona.edu/person/kawther-albader" target="_blank"><i class="bi bi-globe"></i></a>
+            
+            
+            
+            
+            
+            
+            
+          </li>
+          
+          <li>
+            
+            
+            
+            
+            <a href="https://www.linkedin.com/in/kawther-albader-52043121" target="_blank"><i class="bi bi-linkedin"></i></a>
+            
+            
+            
+            
+          </li>
+          
+        </ul>
+      </div>
     </div>
-</div></main></div>
-
-
- <!-- /main -->
+    
+    <div class="student-bio">Political communication, authenticity perceptions of politicians, and social identity — examining how audiences evaluate political actors across media environments.</div>
+    
+  </div>
+  
+  <div class="student-card">
+    <div class="student-header">
+      <a class="student-photo-link" href="https://www.uva.nl/en/profile/b/u/a.l.buttgereit/a.l.buttgereit.html" target="_blank">
+        <img class="student-photo" src="img/lina.png" alt="Lina Buttgereit picture">
+      </a>
+      <div class="student-meta">
+        <p class="student-name">Lina Buttgereit</p>
+        
+        <ul class="student-socials">
+          
+          <li>
+            
+            <a href="https://www.uva.nl/en/profile/b/u/a.l.buttgereit/a.l.buttgereit.html" target="_blank"><i class="bi bi-globe"></i></a>
+            
+            
+            
+            
+            
+            
+            
+          </li>
+          
+          <li>
+            
+            
+            
+            
+            
+            
+            <a href="https://bsky.app/profile/linabuttgereit.bsky.social" target="_blank">
+              <svg class="bsky-icon" viewbox="0 0 360 320" xmlns="http://www.w3.org/2000/svg">
+                <path d="M180 142c-16.3-31.7-60.7-90.8-102-120C38.5-5.9 23.4-1 13.5 3.4 2.1 8.6 0 26.2 0 36.5c0 10.4 5.7 84.8 9.4 97.2 12.2 41 55.7 55 95.7 50.5-58.7 8.6-110.8 30-73.9 106.8 35.3 74.6 89.7 55.2 120.8 41.5 9-3.9 17.3-7.5 24-10.1 6.7 2.6 15 6.2 24 10.1 31.1 13.7 85.5 33.1 120.8-41.5 36.9-76.8-15.2-98.2-73.9-106.8 40 4.4 83.5-9.5 95.7-50.5 3.7-12.4 9.4-86.8 9.4-97.2 0-10.3-2.1-27.9-13.5-33.1C336.6-1 321.5-5.9 282 22c-41.3 29.2-85.7 88.3-102 120Z"></path>
+              </svg>
+            </a>
+            
+            
+          </li>
+          
+          <li>
+            
+            
+            
+            
+            <a href="https://www.linkedin.com/in/lina-buttgereit-48198a227" target="_blank"><i class="bi bi-linkedin"></i></a>
+            
+            
+            
+            
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+    
+    <div class="student-bio">Investigating the role of social norms in negative campaigning and how citizens respond to attack-based political communication.</div>
+    
+  </div>
+  
+  <div class="student-card">
+    <div class="student-header">
+      <a class="student-photo-link" href="https://jehoonchae.github.io/" target="_blank">
+        <img class="student-photo" src="img/je.png" alt="Je Hoon Chae picture">
+      </a>
+      <div class="student-meta">
+        <p class="student-name">Je Hoon Chae</p>
+        
+        <ul class="student-socials">
+          
+          <li>
+            
+            <a href="https://jehoonchae.github.io/" target="_blank"><i class="bi bi-globe"></i></a>
+            
+            
+            
+            
+            
+            
+            
+          </li>
+          
+          <li>
+            
+            
+            
+            
+            
+            
+            <a href="https://bsky.app/profile/jhchae.bsky.social" target="_blank">
+              <svg class="bsky-icon" viewbox="0 0 360 320" xmlns="http://www.w3.org/2000/svg">
+                <path d="M180 142c-16.3-31.7-60.7-90.8-102-120C38.5-5.9 23.4-1 13.5 3.4 2.1 8.6 0 26.2 0 36.5c0 10.4 5.7 84.8 9.4 97.2 12.2 41 55.7 55 95.7 50.5-58.7 8.6-110.8 30-73.9 106.8 35.3 74.6 89.7 55.2 120.8 41.5 9-3.9 17.3-7.5 24-10.1 6.7 2.6 15 6.2 24 10.1 31.1 13.7 85.5 33.1 120.8-41.5 36.9-76.8-15.2-98.2-73.9-106.8 40 4.4 83.5-9.5 95.7-50.5 3.7-12.4 9.4-86.8 9.4-97.2 0-10.3-2.1-27.9-13.5-33.1C336.6-1 321.5-5.9 282 22c-41.3 29.2-85.7 88.3-102 120Z"></path>
+              </svg>
+            </a>
+            
+            
+          </li>
+          
+          <li>
+            
+            
+            
+            
+            <a href="https://www.linkedin.com/in/je-hoon-chae-60724a27a/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            
+            
+            
+            
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+    
+    <div class="student-bio">I study the durability of interventions such as meta-misperception correction to counteract political polarization and misinformation.</div>
+    
+  </div>
+  
+  <div class="student-card">
+    <div class="student-header">
+      <a class="student-photo-link" href="https://socialsciences.fisppa.unipd.it/team-member/giulia-coppo/" target="_blank">
+        <img class="student-photo" src="img/giulia.png" alt="Giulia Coppo picture">
+      </a>
+      <div class="student-meta">
+        <p class="student-name">Giulia Coppo</p>
+        
+        <ul class="student-socials">
+          
+          <li>
+            
+            <a href="https://socialsciences.fisppa.unipd.it/team-member/giulia-coppo/" target="_blank"><i class="bi bi-globe"></i></a>
+            
+            
+            
+            
+            
+            
+            
+          </li>
+          
+          <li>
+            
+            
+            
+            
+            
+            
+            <a href="https://bsky.app/profile/giuliacoppo.bsky.social" target="_blank">
+              <svg class="bsky-icon" viewbox="0 0 360 320" xmlns="http://www.w3.org/2000/svg">
+                <path d="M180 142c-16.3-31.7-60.7-90.8-102-120C38.5-5.9 23.4-1 13.5 3.4 2.1 8.6 0 26.2 0 36.5c0 10.4 5.7 84.8 9.4 97.2 12.2 41 55.7 55 95.7 50.5-58.7 8.6-110.8 30-73.9 106.8 35.3 74.6 89.7 55.2 120.8 41.5 9-3.9 17.3-7.5 24-10.1 6.7 2.6 15 6.2 24 10.1 31.1 13.7 85.5 33.1 120.8-41.5 36.9-76.8-15.2-98.2-73.9-106.8 40 4.4 83.5-9.5 95.7-50.5 3.7-12.4 9.4-86.8 9.4-97.2 0-10.3-2.1-27.9-13.5-33.1C336.6-1 321.5-5.9 282 22c-41.3 29.2-85.7 88.3-102 120Z"></path>
+              </svg>
+            </a>
+            
+            
+          </li>
+          
+          <li>
+            
+            
+            
+            
+            <a href="https://www.linkedin.com/in/giuliacoppo" target="_blank"><i class="bi bi-linkedin"></i></a>
+            
+            
+            
+            
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+    
+    <div class="student-bio">Behind every political campaign are people making decisions on which messages reach which voters — my research unpacks those choices and their effects.</div>
+    
+  </div>
+  
+  <div class="student-card">
+    <div class="student-header">
+      <a class="student-photo-link" href="http://linktr.ee/luc.cejkova" target="_blank">
+        <img class="student-photo" src="img/lucie.png" alt="Lucie Čejková picture">
+      </a>
+      <div class="student-meta">
+        <p class="student-name">Lucie Čejková</p>
+        
+        <ul class="student-socials">
+          
+          <li>
+            
+            <a href="http://linktr.ee/luc.cejkova" target="_blank"><i class="bi bi-globe"></i></a>
+            
+            
+            
+            
+            
+            
+            
+          </li>
+          
+          <li>
+            
+            
+            
+            
+            <a href="https://www.linkedin.com/in/luccej/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            
+            
+            
+            
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+    
+    <div class="student-bio">Researching conspiracy thinking and political attitudes of news audiences, with a critical perspective on digital information environments.</div>
+    
+  </div>
+  
+  <div class="student-card">
+    <div class="student-header">
+      <a class="student-photo-link" href="https://humanities.uct.ac.za/cfms/digital-media-sociology-dms-lab" target="_blank">
+        <img class="student-photo" src="img/nicola.png" alt="Nicola Davies-Laubscher picture">
+      </a>
+      <div class="student-meta">
+        <p class="student-name">Nicola Davies-Laubscher</p>
+        
+        <ul class="student-socials">
+          
+          <li>
+            
+            <a href="https://humanities.uct.ac.za/cfms/digital-media-sociology-dms-lab" target="_blank"><i class="bi bi-globe"></i></a>
+            
+            
+            
+            
+            
+            
+            
+          </li>
+          
+          <li>
+            
+            
+            
+            
+            <a href="https://www.linkedin.com/in/nicola-davies-laubscher-669ba6301/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            
+            
+            
+            
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+    
+    <div class="student-bio">My PhD examined COVID-19 misinformation within the Afrikaner community in South Africa, exploring how digital media and identity intersect in crisis communication.</div>
+    
+  </div>
+  
+  <div class="student-card">
+    <div class="student-header">
+      <a class="student-photo-link" href="https://carmendymanus.com/" target="_blank">
+        <img class="student-photo" src="img/carmen.png" alt="Carmen Dymanus picture">
+      </a>
+      <div class="student-meta">
+        <p class="student-name">Carmen Dymanus</p>
+        
+        <ul class="student-socials">
+          
+          <li>
+            
+            <a href="https://carmendymanus.com/" target="_blank"><i class="bi bi-globe"></i></a>
+            
+            
+            
+            
+            
+            
+            
+          </li>
+          
+          <li>
+            
+            
+            
+            
+            
+            
+            <a href="https://bsky.app/profile/carmendymanus.bsky.social" target="_blank">
+              <svg class="bsky-icon" viewbox="0 0 360 320" xmlns="http://www.w3.org/2000/svg">
+                <path d="M180 142c-16.3-31.7-60.7-90.8-102-120C38.5-5.9 23.4-1 13.5 3.4 2.1 8.6 0 26.2 0 36.5c0 10.4 5.7 84.8 9.4 97.2 12.2 41 55.7 55 95.7 50.5-58.7 8.6-110.8 30-73.9 106.8 35.3 74.6 89.7 55.2 120.8 41.5 9-3.9 17.3-7.5 24-10.1 6.7 2.6 15 6.2 24 10.1 31.1 13.7 85.5 33.1 120.8-41.5 36.9-76.8-15.2-98.2-73.9-106.8 40 4.4 83.5-9.5 95.7-50.5 3.7-12.4 9.4-86.8 9.4-97.2 0-10.3-2.1-27.9-13.5-33.1C336.6-1 321.5-5.9 282 22c-41.3 29.2-85.7 88.3-102 120Z"></path>
+              </svg>
+            </a>
+            
+            
+          </li>
+          
+          <li>
+            
+            
+            
+            
+            <a href="https://www.linkedin.com/in/carmen-dymanus/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            
+            
+            
+            
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+    
+    <div class="student-bio">I am a PhD candidate in Political Communication at Wageningen University &amp; Research, studying how citizens engage with environmental politics in digital media environments.</div>
+    
+  </div>
+  
+  <div class="student-card">
+    <div class="student-header">
+      <a class="student-photo-link" href="https://www.researchgate.net/profile/Seyma-Filiz-2" target="_blank">
+        <img class="student-photo" src="img/seyma.png" alt="Seyma Filiz picture">
+      </a>
+      <div class="student-meta">
+        <p class="student-name">Seyma Filiz</p>
+        
+        <ul class="student-socials">
+          
+          <li>
+            
+            <a href="https://www.researchgate.net/profile/Seyma-Filiz-2" target="_blank"><i class="bi bi-globe"></i></a>
+            
+            
+            
+            
+            
+            
+            
+          </li>
+          
+          <li>
+            
+            
+            
+            
+            
+            
+            <a href="https://bsky.app/profile/seymafiliz.bsky.social" target="_blank">
+              <svg class="bsky-icon" viewbox="0 0 360 320" xmlns="http://www.w3.org/2000/svg">
+                <path d="M180 142c-16.3-31.7-60.7-90.8-102-120C38.5-5.9 23.4-1 13.5 3.4 2.1 8.6 0 26.2 0 36.5c0 10.4 5.7 84.8 9.4 97.2 12.2 41 55.7 55 95.7 50.5-58.7 8.6-110.8 30-73.9 106.8 35.3 74.6 89.7 55.2 120.8 41.5 9-3.9 17.3-7.5 24-10.1 6.7 2.6 15 6.2 24 10.1 31.1 13.7 85.5 33.1 120.8-41.5 36.9-76.8-15.2-98.2-73.9-106.8 40 4.4 83.5-9.5 95.7-50.5 3.7-12.4 9.4-86.8 9.4-97.2 0-10.3-2.1-27.9-13.5-33.1C336.6-1 321.5-5.9 282 22c-41.3 29.2-85.7 88.3-102 120Z"></path>
+              </svg>
+            </a>
+            
+            
+          </li>
+          
+          <li>
+            
+            
+            
+            
+            <a href="https://www.linkedin.com/in/seyma-filiz-a73042140" target="_blank"><i class="bi bi-linkedin"></i></a>
+            
+            
+            
+            
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+    
+    <div class="student-bio">Investigating how data-driven technologies and communicative AI shape smart city governance and the implications for democratic public communication.</div>
+    
+  </div>
+  
+  <div class="student-card">
+    <div class="student-header">
+      <a class="student-photo-link" href="https://www.udp.cl/academico/karen-gheza-correa/" target="_blank">
+        <img class="student-photo" src="img/karen.png" alt="Karen Gheza picture">
+      </a>
+      <div class="student-meta">
+        <p class="student-name">Karen Gheza</p>
+        
+        <ul class="student-socials">
+          
+          <li>
+            
+            <a href="https://www.udp.cl/academico/karen-gheza-correa/" target="_blank"><i class="bi bi-globe"></i></a>
+            
+            
+            
+            
+            
+            
+            
+          </li>
+          
+          <li>
+            
+            
+            
+            
+            <a href="https://www.linkedin.com/in/karengheza/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            
+            
+            
+            
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+    
+    <div class="student-bio">Focusing on sociotechnical relations and how platforms shape political communication dynamics.</div>
+    
+  </div>
+  
+  <div class="student-card">
+    <div class="student-header">
+      <a class="student-photo-link" href="https://research.wisc.edu/uw-distinguished-research-fellowships-support-rise-research-areas/" target="_blank">
+        <img class="student-photo" src="img/christina.png" alt="Christina M. Henry picture">
+      </a>
+      <div class="student-meta">
+        <p class="student-name">Christina M. Henry</p>
+        
+        <ul class="student-socials">
+          
+          <li>
+            
+            <a href="https://research.wisc.edu/uw-distinguished-research-fellowships-support-rise-research-areas/" target="_blank"><i class="bi bi-globe"></i></a>
+            
+            
+            
+            
+            
+            
+            
+          </li>
+          
+          <li>
+            
+            
+            
+            
+            
+            
+            <a href="https://bsky.app/profile/thechristinamh.bsky.social" target="_blank">
+              <svg class="bsky-icon" viewbox="0 0 360 320" xmlns="http://www.w3.org/2000/svg">
+                <path d="M180 142c-16.3-31.7-60.7-90.8-102-120C38.5-5.9 23.4-1 13.5 3.4 2.1 8.6 0 26.2 0 36.5c0 10.4 5.7 84.8 9.4 97.2 12.2 41 55.7 55 95.7 50.5-58.7 8.6-110.8 30-73.9 106.8 35.3 74.6 89.7 55.2 120.8 41.5 9-3.9 17.3-7.5 24-10.1 6.7 2.6 15 6.2 24 10.1 31.1 13.7 85.5 33.1 120.8-41.5 36.9-76.8-15.2-98.2-73.9-106.8 40 4.4 83.5-9.5 95.7-50.5 3.7-12.4 9.4-86.8 9.4-97.2 0-10.3-2.1-27.9-13.5-33.1C336.6-1 321.5-5.9 282 22c-41.3 29.2-85.7 88.3-102 120Z"></path>
+              </svg>
+            </a>
+            
+            
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+    
+    <div class="student-bio">My research focuses on political communication and media psychology, with an emphasis on emotion and emotion regulation in political contexts, including the health impacts of political media usage.</div>
+    
+  </div>
+  
+  <div class="student-card">
+    <div class="student-header">
+      <a class="student-photo-link" href="https://orcid.org/0009-0004-5891-4291" target="_blank">
+        <img class="student-photo" src="img/elisa.png" alt="Elisa Iannone picture">
+      </a>
+      <div class="student-meta">
+        <p class="student-name">Elisa Iannone</p>
+        
+        <ul class="student-socials">
+          
+          <li>
+            
+            <a href="https://orcid.org/0009-0004-5891-4291" target="_blank"><i class="bi bi-globe"></i></a>
+            
+            
+            
+            
+            
+            
+            
+          </li>
+          
+          <li>
+            
+            
+            
+            
+            <a href="https://www.linkedin.com/in/elisa-iannone-14b085184/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            
+            
+            
+            
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+    
+    <div class="student-bio">I examine how populist communication evolves with government participation, diffuses across parties, and shapes citizen engagement.</div>
+    
+  </div>
+  
+  <div class="student-card">
+    <div class="student-header">
+      <a class="student-photo-link" href="https://advertisingresearch.univie.ac.at/team/diana-kostikova/" target="_blank">
+        <img class="student-photo" src="img/diana.png" alt="Diana Kostikova picture">
+      </a>
+      <div class="student-meta">
+        <p class="student-name">Diana Kostikova</p>
+        
+        <ul class="student-socials">
+          
+          <li>
+            
+            <a href="https://advertisingresearch.univie.ac.at/team/diana-kostikova/" target="_blank"><i class="bi bi-globe"></i></a>
+            
+            
+            
+            
+            
+            
+            
+          </li>
+          
+          <li>
+            
+            
+            
+            
+            <a href="https://www.linkedin.com/in/diana-kostikova" target="_blank"><i class="bi bi-linkedin"></i></a>
+            
+            
+            
+            
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+    
+    <div class="student-bio">Diana examines how emotions in social media–based political communication shape informed and responsible democratic engagement.</div>
+    
+  </div>
+  
+  <div class="student-card">
+    <div class="student-header">
+      <a class="student-photo-link" href="https://coms.ku.edu/people/mackenzie-marquess" target="_blank">
+        <img class="student-photo" src="img/mackenzie.png" alt="Mackenzie Marquess picture">
+      </a>
+      <div class="student-meta">
+        <p class="student-name">Mackenzie Marquess</p>
+        
+        <ul class="student-socials">
+          
+          <li>
+            
+            <a href="https://coms.ku.edu/people/mackenzie-marquess" target="_blank"><i class="bi bi-globe"></i></a>
+            
+            
+            
+            
+            
+            
+            
+          </li>
+          
+          <li>
+            
+            
+            
+            
+            <a href="https://www.linkedin.com/in/mackenziemarquess/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            
+            
+            
+            
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+    
+    <div class="student-bio">Mackenzie researches the construction of social norms surrounding political discourse and how those norms shape online and offline civic engagement.</div>
+    
+  </div>
+  
+  <div class="student-card">
+    <div class="student-header">
+      <a class="student-photo-link" href="https://scholar.google.com/citations?user=uUqEUZMAAAAJ" target="_blank">
+        <img class="student-photo" src="img/joan.png" alt="Joan Chidinma Nweke picture">
+      </a>
+      <div class="student-meta">
+        <p class="student-name">Joan Chidinma Nweke</p>
+        
+        <ul class="student-socials">
+          
+          <li>
+            
+            <a href="https://scholar.google.com/citations?user=uUqEUZMAAAAJ" target="_blank"><i class="bi bi-globe"></i></a>
+            
+            
+            
+            
+            
+            
+            
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+    
+    <div class="student-bio">Examining how digital media, gendered disinformation, and online abuse shape Nigerian women's political participation and representation.</div>
+    
+  </div>
+  
+  <div class="student-card">
+    <div class="student-header">
+      <a class="student-photo-link" href="https://gabriellebeacken.com" target="_blank">
+        <img class="student-photo" src="img/gabrielle.png" alt="Gabrielle D. Beacken picture">
+      </a>
+      <div class="student-meta">
+        <p class="student-name">Gabrielle D. Beacken</p>
+        
+        <ul class="student-socials">
+          
+          <li>
+            
+            <a href="https://gabriellebeacken.com" target="_blank"><i class="bi bi-globe"></i></a>
+            
+            
+            
+            
+            
+            
+            
+          </li>
+          
+          <li>
+            
+            
+            
+            
+            <a href="https://www.linkedin.com/in/gabrielle-beacken-6b019795/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            
+            
+            
+            
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+    
+    <div class="student-bio">Examining how political elites and influencers use identity and propaganda on social media to mobilize supporters and reshape political discourse.</div>
+    
+  </div>
+  
+  <div class="student-card">
+    <div class="student-header">
+      <a class="student-photo-link" href="https://www.aau.at/team/tabakan-chiara/" target="_blank">
+        <img class="student-photo" src="img/chiara.png" alt="Chiara Tabakan picture">
+      </a>
+      <div class="student-meta">
+        <p class="student-name">Chiara Tabakan</p>
+        
+        <ul class="student-socials">
+          
+          <li>
+            
+            <a href="https://www.aau.at/team/tabakan-chiara/" target="_blank"><i class="bi bi-globe"></i></a>
+            
+            
+            
+            
+            
+            
+            
+          </li>
+          
+          <li>
+            
+            
+            
+            
+            <a href="https://www.linkedin.com/in/chiaratabakan" target="_blank"><i class="bi bi-linkedin"></i></a>
+            
+            
+            
+            
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+    
+    <div class="student-bio">My research examines how digital media shape communication and the production, circulation, and reception of information.</div>
+    
+  </div>
+  
+  <div class="student-card">
+    <div class="student-header">
+      <a class="student-photo-link" href="https://ahc.leeds.ac.uk/media/pgr/6348/reka-veress" target="_blank">
+        <img class="student-photo" src="img/reka.png" alt="Reka Veress picture">
+      </a>
+      <div class="student-meta">
+        <p class="student-name">Reka Veress</p>
+        
+        <ul class="student-socials">
+          
+          <li>
+            
+            <a href="https://ahc.leeds.ac.uk/media/pgr/6348/reka-veress" target="_blank"><i class="bi bi-globe"></i></a>
+            
+            
+            
+            
+            
+            
+            
+          </li>
+          
+          <li>
+            
+            
+            
+            
+            <a href="https://www.linkedin.com/in/reka-veress-222d111" target="_blank"><i class="bi bi-linkedin"></i></a>
+            
+            
+            
+            
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+    
+    <div class="student-bio">My PhD research examines the politicisation of collective memory in Hungary, focusing on how the state mobilises historical narratives for contemporary political purposes.</div>
+    
+  </div>
+  
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -898,7 +1566,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
- <!-- /content -->
+</div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">

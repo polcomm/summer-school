@@ -1,13 +1,13 @@
 ---
 page-layout: full
 listing:
-    template: speakers.ejs
-    contents: speakers.yml
+    template: students.ejs
+    contents: students.yml
 ---
 
 
 ::: {.page-banner}
-# Speakers
+# Participants
 :::
 
 ::: grid
