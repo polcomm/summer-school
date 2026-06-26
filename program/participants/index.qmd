@@ -1,4 +1,5 @@
 ---
+pagetitle: "Participants"
 page-layout: full
 listing:
   - id: participants
