@@ -38,6 +38,10 @@
     "program\\speakers\\index.qmd": [
       "speakers.yml",
       "../../about/sponsors/sponsors.yml"
+    ],
+    "program/participants/index.qmd": [
+      "students.yml",
+      "../../about/sponsors/sponsors.yml"
     ]
   }
 }
