@@ -126,8 +126,6 @@ listing:
 /* Coffee & Careers → neutral */
 .event-generic {
   background: rgba(0,0,0,0.02);
-  font-style: italic;
-  opacity: 0.6;
   text-align: center;
   vertical-align: middle;
 }
@@ -185,7 +183,7 @@ td.empty { opacity: 0.15; text-align: center; vertical-align: middle; }
 .day-card-row.event-wine-row .day-card-content    { color: #0a3263; font-weight: 500; }
 /* Subtle — Coffee & Careers */
 .day-card-row.careers-row        { background: rgba(0,0,0,0.02); }
-.day-card-row.careers-row .day-card-content { font-style: italic; opacity: 0.6; }
+.day-card-row.careers-row .day-card-content { }
 
 @media (max-width: 680px) {
   .sched-table-wrap { display: none; }
@@ -201,7 +199,7 @@ td.empty { opacity: 0.15; text-align: center; vertical-align: middle; }
 ::: {.g-col-6 .text_block}
 All session times are in local time (Leeds, UK — BST / UTC+1).
 
-The programme below provides an overview of the public academic schedule. Registered participants will receive a detailed participant information pack, including preparatory readings, accommodation information, and guidance on the afternoon research-feedback sessions. Click [here](https://polcomm.github.io/summer-school/program/abstracts/) for a detailed view of masterclasses' abstracts.
+Registered participants will receive, under separate cover, links to preparatory readings, information about accommodations, and guidance on their afternoon presentations. Click [here](https://polcomm.github.io/summer-school/program/abstracts/) for all keynote and masterclass abstracts.
 
 :::
 
@@ -232,30 +230,32 @@ The programme below provides an overview of the public academic schedule. Regist
     <!-- 08:30 — Mon: Welcome (1 row); Tue–Fri: Masterclass 1 starts (rowspan 3 = 08:30–10:00) -->
     <tr>
       <td class="time-col">08:30</td>
-      <td style="color:#999;font-style:italic;vertical-align:middle;">
-        Welcome: Eike Mark Rinke & Kate Kenski<br/>
-        <small style="color:#bbb;">(08:30–09:15)</small>
+      <td style="vertical-align:top;">
+        <strong>Welcome</strong>
+        <div class="talk-speaker">Eike Mark Rinke &middot; University of Leeds</div>
+        <div class="talk-speaker">Kate Kenski &middot; University of Arizona</div>
+        <div class="talk-time">(08:30–09:15)</div>
       </td>
       <td rowspan="3">
-        <span class="lbl lbl-lecture">Masterclass 1</span>
+        <span class="lbl lbl-lecture">Masterclass</span>
         <div class="talk-title">How AI Is Transforming Research (Methods) in Political Communication</div>
         <div class="talk-speaker">Jörg Matthes &middot; University of Vienna</div>
         <div class="talk-time">08:30–10:00</div>
       </td>
       <td rowspan="3">
-        <span class="lbl lbl-lecture">Masterclass 1</span>
+        <span class="lbl lbl-lecture">Masterclass</span>
         <div class="talk-title">Does AI Undermine Democracy?</div>
         <div class="talk-speaker">Claes de Vreese &middot; University of Amsterdam</div>
         <div class="talk-time">08:30–10:00</div>
       </td>
       <td rowspan="3">
-        <span class="lbl lbl-lecture">Masterclass 1</span>
+        <span class="lbl lbl-lecture">Masterclass</span>
         <div class="talk-title">Perceptions of Misinformation Exposure, Social Media, and AI: Mapping the Shifting Targets of Cynicism</div>
         <div class="talk-speaker">Dam Hee Kim &middot; Korea University</div>
         <div class="talk-time">08:30–10:00</div>
       </td>
       <td rowspan="3">
-        <span class="lbl lbl-lecture">Masterclass 1</span>
+        <span class="lbl lbl-lecture">Masterclass</span>
         <div class="talk-title">Social Media in U.S. Elections</div>
         <div class="talk-speaker">Talia Stroud &middot; University of Texas at Austin</div>
         <div class="talk-time">08:30–10:00</div>
@@ -278,23 +278,21 @@ The programme below provides an overview of the public academic schedule. Regist
       <td class="time-col">09:30</td>
     </tr>
 
-    <!-- 10:00 — Mid-morning refreshments (1 row) -->
+    <!-- 10:00 — buffer row -->
     <tr>
       <td class="time-col">10:00</td>
-      <td class="break-row" colspan="5">Mid-morning refreshments</td>
+      <td class="break-row" colspan="5" style="opacity:0.2;">—</td>
     </tr>
 
-    <!-- 10:30 — Coffee & Careers (rowspan 2 = 10:30–11:30 all days) -->
+    <!-- 10:30 — Coffee & Careers (rowspan 2 = 10:30–11:30 all days, colspan 5) -->
     <tr>
       <td class="time-col">10:30</td>
-      <td rowspan="2" class="event-generic">Coffee &amp; Careers<br/><small>(10:30–11:30)</small></td>
-      <td rowspan="2" class="event-generic">Coffee &amp; Careers<br/><small>(10:15–11:15)</small></td>
-      <td rowspan="2" class="event-generic">Coffee &amp; Careers<br/><small>(10:15–11:15)</small></td>
-      <td rowspan="2" class="event-generic">Coffee &amp; Careers<br/><small>(10:15–11:15)</small></td>
-      <td rowspan="2" class="event-generic">Coffee &amp; Careers<br/><small>(10:15–11:15)</small></td>
+      <td rowspan="2" colspan="5" class="event-generic"><strong>Coffee &amp; Careers</strong>
+        <div class="talk-speaker">Patricia Moy &middot; University of Washington</div>
+        <div class="talk-speaker">Eike Mark Rinke &middot; University of Leeds</div></td>
     </tr>
 
-    <!-- 11:00 — transition / buffer; all cols covered by rowspan -->
+    <!-- 11:00 — transition / buffer; covered by colspan+rowspan -->
     <tr>
       <td class="time-col">11:00</td>
     </tr>
@@ -303,31 +301,31 @@ The programme below provides an overview of the public academic schedule. Regist
     <tr>
       <td class="time-col">11:30</td>
       <td rowspan="3">
-        <span class="lbl lbl-lecture">Masterclass 2</span>
+        <span class="lbl lbl-lecture">Masterclass</span>
         <div class="talk-title">What Has Political Communication Got to Do with Democracy?</div>
         <div class="talk-speaker">Regina Lawrence &middot; University of Oregon</div>
         <div class="talk-time">11:30–13:00</div>
       </td>
       <td rowspan="3">
-        <span class="lbl lbl-lecture">Masterclass 2</span>
+        <span class="lbl lbl-lecture">Masterclass</span>
         <div class="talk-title">Algorithms, AI, and Power: Three Tensions for Democratic Citizenship</div>
-        <div class="talk-speaker">Sebastián Valenzuela &middot; PUC Chile</div>
+        <div class="talk-speaker">Sebastián Valenzuela &middot; Pontificia Universidad Católica de Chile</div>
         <div class="talk-time">11:30–13:00</div>
       </td>
       <td rowspan="3">
-        <span class="lbl lbl-lecture">Masterclass 2</span>
+        <span class="lbl lbl-lecture">Masterclass</span>
         <div class="talk-title">Populist Communication and Democratic Ideals: New Directions in a Global Research Agenda</div>
         <div class="talk-speaker">Lone Sorensen &middot; University of Leeds</div>
         <div class="talk-time">11:30–13:00</div>
       </td>
       <td rowspan="3">
-        <span class="lbl lbl-lecture">Masterclass 2</span>
+        <span class="lbl lbl-lecture">Masterclass</span>
         <div class="talk-title">Propaganda and Public Opinion as a Participatory Communication Process</div>
-        <div class="talk-speaker">Christian Baden &middot; Hebrew University of Jerusalem</div>
+        <div class="talk-speaker">Christian Baden &middot; The Hebrew University of Jerusalem</div>
         <div class="talk-time">11:30–13:00</div>
       </td>
       <td rowspan="3">
-        <span class="lbl lbl-lecture">Masterclass 2</span>
+        <span class="lbl lbl-lecture">Masterclass</span>
         <div class="talk-title">Examining the Causes and Responses to Polarization: From Media Triggers to Democratic Interventions</div>
         <div class="talk-speaker">Chris Fei Shen &middot; City University of Hong Kong</div>
         <div class="talk-time">11:30–13:00</div>
@@ -340,7 +338,7 @@ The programme below provides an overview of the public academic schedule. Regist
     <tr>
       <td class="time-col">13:00</td>
       <td class="break-row" colspan="5" rowspan="3">
-        Lunch / break<br/><small>(13:00–14:15)</small>
+        Lunch / break
       </td>
     </tr>
     <tr><td class="time-col">13:30</td></tr>
@@ -348,9 +346,9 @@ The programme below provides an overview of the public academic schedule. Regist
 
     <!-- 14:30 — Student presentations (rowspan 3 = 14:30–16:00) -->
     <tr>
-      <td class="time-col">14:30</td>
+      <td class="time-col">14:15</td>
       <td class="break-row" colspan="5" rowspan="3">
-        Student presentations &amp; mentoring<br/><small>(14:15–16:00)</small>
+        Student presentations
       </td>
     </tr>
     <tr><td class="time-col">15:00</td></tr>
@@ -442,7 +440,7 @@ The programme below provides an overview of the public academic schedule. Regist
   </div>
   <div class="day-card-row">
     <div class="day-card-time">08:30–09:15</div>
-    <div class="day-card-content" style="color:#999;font-style:italic;">Welcome: Eike Mark Rinke & Kate Kenski</div>
+    <div class="day-card-content"><strong>Welcome</strong><br/><span class="talk-speaker">Eike Mark Rinke &middot; University of Leeds</span><br/><span class="talk-speaker">Kate Kenski &middot; University of Arizona</span></div>
   </div>
   <div class="day-card-row">
     <div class="day-card-time">09:15–10:15</div>
@@ -452,18 +450,14 @@ The programme below provides an overview of the public academic schedule. Regist
       <div class="talk-speaker">Stephen Coleman &middot; University of Leeds</div>
     </div>
   </div>
-  <div class="day-card-row break">
-    <div class="day-card-time">10:15</div>
-    <div class="day-card-content">Mid-morning refreshments</div>
-  </div>
   <div class="day-card-row careers-row">
     <div class="day-card-time">10:30–11:30</div>
-    <div class="day-card-content">Coffee &amp; Careers</div>
+    <div class="day-card-content"><strong>Coffee &amp; Careers</strong><br/><span class="talk-speaker">Patricia Moy &middot; University of Washington</span><br/><span class="talk-speaker">Eike Mark Rinke &middot; University of Leeds</span></div>
   </div>
   <div class="day-card-row">
     <div class="day-card-time">11:30–13:00</div>
     <div class="day-card-content">
-      <span class="lbl lbl-lecture">Masterclass 2</span>
+      <span class="lbl lbl-lecture">Masterclass</span>
       <div class="talk-title">What Has Political Communication Got to Do with Democracy?</div>
       <div class="talk-speaker">Regina Lawrence &middot; University of Oregon</div>
     </div>
@@ -474,7 +468,7 @@ The programme below provides an overview of the public academic schedule. Regist
   </div>
   <div class="day-card-row break">
     <div class="day-card-time">14:15–16:00</div>
-    <div class="day-card-content">Student presentations &amp; mentoring</div>
+    <div class="day-card-content">Student presentations</div>
   </div>
   <div class="day-card-row event-buffet-row">
     <div class="day-card-time">17:00–18:30</div>
@@ -492,25 +486,21 @@ The programme below provides an overview of the public academic schedule. Regist
   <div class="day-card-row">
     <div class="day-card-time">08:30–10:00</div>
     <div class="day-card-content">
-      <span class="lbl lbl-lecture">Masterclass 1</span>
+      <span class="lbl lbl-lecture">Masterclass</span>
       <div class="talk-title">How AI Is Transforming Research (Methods) in Political Communication</div>
       <div class="talk-speaker">Jörg Matthes &middot; University of Vienna</div>
     </div>
   </div>
-  <div class="day-card-row break">
-    <div class="day-card-time">10:00–10:15</div>
-    <div class="day-card-content">Mid-morning refreshments</div>
-  </div>
   <div class="day-card-row careers-row">
     <div class="day-card-time">10:15–11:15</div>
-    <div class="day-card-content">Coffee &amp; Careers</div>
+    <div class="day-card-content"><strong>Coffee &amp; Careers</strong><br/><span class="talk-speaker">Patricia Moy &middot; University of Washington</span><br/><span class="talk-speaker">Eike Mark Rinke &middot; University of Leeds</span></div>
   </div>
   <div class="day-card-row">
     <div class="day-card-time">11:30–13:00</div>
     <div class="day-card-content">
-      <span class="lbl lbl-lecture">Masterclass 2</span>
+      <span class="lbl lbl-lecture">Masterclass</span>
       <div class="talk-title">Algorithms, AI, and Power: Three Tensions for Democratic Citizenship</div>
-      <div class="talk-speaker">Sebastián Valenzuela &middot; PUC Chile</div>
+      <div class="talk-speaker">Sebastián Valenzuela &middot; Pontificia Universidad Católica de Chile</div>
     </div>
   </div>
   <div class="day-card-row break">
@@ -519,7 +509,7 @@ The programme below provides an overview of the public academic schedule. Regist
   </div>
   <div class="day-card-row break">
     <div class="day-card-time">14:15–16:00</div>
-    <div class="day-card-content">Student presentations &amp; mentoring</div>
+    <div class="day-card-content">Student presentations</div>
   </div>
 </div>
 
@@ -533,23 +523,19 @@ The programme below provides an overview of the public academic schedule. Regist
   <div class="day-card-row">
     <div class="day-card-time">08:30–10:00</div>
     <div class="day-card-content">
-      <span class="lbl lbl-lecture">Masterclass 1</span>
+      <span class="lbl lbl-lecture">Masterclass</span>
       <div class="talk-title">Does AI Undermine Democracy?</div>
       <div class="talk-speaker">Claes de Vreese &middot; University of Amsterdam</div>
     </div>
   </div>
-  <div class="day-card-row break">
-    <div class="day-card-time">10:00–10:15</div>
-    <div class="day-card-content">Mid-morning refreshments</div>
-  </div>
   <div class="day-card-row careers-row">
     <div class="day-card-time">10:15–11:15</div>
-    <div class="day-card-content">Coffee &amp; Careers</div>
+    <div class="day-card-content"><strong>Coffee &amp; Careers</strong><br/><span class="talk-speaker">Patricia Moy &middot; University of Washington</span><br/><span class="talk-speaker">Eike Mark Rinke &middot; University of Leeds</span></div>
   </div>
   <div class="day-card-row">
     <div class="day-card-time">11:30–13:00</div>
     <div class="day-card-content">
-      <span class="lbl lbl-lecture">Masterclass 2</span>
+      <span class="lbl lbl-lecture">Masterclass</span>
       <div class="talk-title">Populist Communication and Democratic Ideals: New Directions in a Global Research Agenda</div>
       <div class="talk-speaker">Lone Sorensen &middot; University of Leeds</div>
     </div>
@@ -560,7 +546,7 @@ The programme below provides an overview of the public academic schedule. Regist
   </div>
   <div class="day-card-row break">
     <div class="day-card-time">14:15–16:00</div>
-    <div class="day-card-content">Student presentations &amp; mentoring</div>
+    <div class="day-card-content">Student presentations</div>
   </div>
   <div class="day-card-row event-wine-row">
     <div class="day-card-time">17:30–19:00</div>
@@ -578,25 +564,21 @@ The programme below provides an overview of the public academic schedule. Regist
   <div class="day-card-row">
     <div class="day-card-time">08:30–10:00</div>
     <div class="day-card-content">
-      <span class="lbl lbl-lecture">Masterclass 1</span>
+      <span class="lbl lbl-lecture">Masterclass</span>
       <div class="talk-title">Perceptions of Misinformation Exposure, Social Media, and AI: Mapping the Shifting Targets of Cynicism</div>
       <div class="talk-speaker">Dam Hee Kim &middot; Korea University</div>
     </div>
   </div>
-  <div class="day-card-row break">
-    <div class="day-card-time">10:00–10:15</div>
-    <div class="day-card-content">Mid-morning refreshments</div>
-  </div>
   <div class="day-card-row careers-row">
     <div class="day-card-time">10:15–11:15</div>
-    <div class="day-card-content">Coffee &amp; Careers</div>
+    <div class="day-card-content"><strong>Coffee &amp; Careers</strong><br/><span class="talk-speaker">Patricia Moy &middot; University of Washington</span><br/><span class="talk-speaker">Eike Mark Rinke &middot; University of Leeds</span></div>
   </div>
   <div class="day-card-row">
     <div class="day-card-time">11:30–13:00</div>
     <div class="day-card-content">
-      <span class="lbl lbl-lecture">Masterclass 2</span>
+      <span class="lbl lbl-lecture">Masterclass</span>
       <div class="talk-title">Propaganda and Public Opinion as a Participatory Communication Process</div>
-      <div class="talk-speaker">Christian Baden &middot; Hebrew University of Jerusalem</div>
+      <div class="talk-speaker">Christian Baden &middot; The Hebrew University of Jerusalem</div>
     </div>
   </div>
   <div class="day-card-row break">
@@ -605,7 +587,7 @@ The programme below provides an overview of the public academic schedule. Regist
   </div>
   <div class="day-card-row break">
     <div class="day-card-time">14:15–16:00</div>
-    <div class="day-card-content">Student presentations &amp; mentoring</div>
+    <div class="day-card-content">Student presentations</div>
   </div>
 </div>
 
@@ -619,23 +601,19 @@ The programme below provides an overview of the public academic schedule. Regist
   <div class="day-card-row">
     <div class="day-card-time">08:30–10:00</div>
     <div class="day-card-content">
-      <span class="lbl lbl-lecture">Masterclass 1</span>
+      <span class="lbl lbl-lecture">Masterclass</span>
       <div class="talk-title">Social Media in U.S. Elections</div>
       <div class="talk-speaker">Talia Stroud &middot; University of Texas at Austin</div>
     </div>
   </div>
-  <div class="day-card-row break">
-    <div class="day-card-time">10:00–10:15</div>
-    <div class="day-card-content">Mid-morning refreshments</div>
-  </div>
   <div class="day-card-row careers-row">
     <div class="day-card-time">10:15–11:15</div>
-    <div class="day-card-content">Coffee &amp; Careers</div>
+    <div class="day-card-content"><strong>Coffee &amp; Careers</strong><br/><span class="talk-speaker">Patricia Moy &middot; University of Washington</span><br/><span class="talk-speaker">Eike Mark Rinke &middot; University of Leeds</span></div>
   </div>
   <div class="day-card-row">
     <div class="day-card-time">11:30–13:00</div>
     <div class="day-card-content">
-      <span class="lbl lbl-lecture">Masterclass 2</span>
+      <span class="lbl lbl-lecture">Masterclass</span>
       <div class="talk-title">Examining the Causes and Responses to Polarization: From Media Triggers to Democratic Interventions</div>
       <div class="talk-speaker">Chris Fei Shen &middot; City University of Hong Kong</div>
     </div>
@@ -646,7 +624,7 @@ The programme below provides an overview of the public academic schedule. Regist
   </div>
   <div class="day-card-row break">
     <div class="day-card-time">14:15–16:00</div>
-    <div class="day-card-content">Student presentations &amp; mentoring</div>
+    <div class="day-card-content">Student presentations</div>
   </div>
   <div class="day-card-row event-closing-row">
     <div class="day-card-time">16:00–17:30</div>
