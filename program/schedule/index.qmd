@@ -219,10 +219,13 @@ Registered participants will receive, under separate cover, links to preparatory
   </thead>
   <tbody>
 
-    <!-- 08:00 — Morning pastries (1 row = 30 min) -->
+    <!-- 07:30 — Morning pastries (rowspan 2 = 07:30–08:30) -->
+    <tr>
+      <td class="time-col">07:30</td>
+      <td class="break-row" colspan="5" rowspan="2">Morning pastries &amp; refreshments</td>
+    </tr>
     <tr>
       <td class="time-col">08:00</td>
-      <td class="break-row" colspan="5">Morning pastries &amp; refreshments</td>
     </tr>
 
     <!-- 08:30 — Mon: Welcome (1 row); Tue–Fri: Masterclass 1 starts (rowspan 3 = 08:30–10:00) -->
@@ -413,7 +416,7 @@ Registered participants will receive, under separate cover, links to preparatory
 <div class="day-card">
   <div class="day-card-header">Monday, 13 July &mdash; Democratic ideals and the field of political communication</div>
   <div class="day-card-row break">
-    <div class="day-card-time">08:00</div>
+    <div class="day-card-time">07:30–08:30</div>
     <div class="day-card-content">Morning pastries &amp; refreshments</div>
   </div>
   <div class="day-card-row">
@@ -458,7 +461,7 @@ Registered participants will receive, under separate cover, links to preparatory
 <div class="day-card">
   <div class="day-card-header">Tuesday, 14 July &mdash; AI, algorithms, research methods and democratic citizenship</div>
   <div class="day-card-row break">
-    <div class="day-card-time">08:00</div>
+    <div class="day-card-time">07:30–08:30</div>
     <div class="day-card-content">Morning pastries &amp; refreshments</div>
   </div>
   <div class="day-card-row">
@@ -495,7 +498,7 @@ Registered participants will receive, under separate cover, links to preparatory
 <div class="day-card">
   <div class="day-card-header">Wednesday, 15 July &mdash; AI, populism and democratic communication</div>
   <div class="day-card-row break">
-    <div class="day-card-time">08:00</div>
+    <div class="day-card-time">07:30–08:30</div>
     <div class="day-card-content">Morning pastries &amp; refreshments</div>
   </div>
   <div class="day-card-row">
@@ -536,7 +539,7 @@ Registered participants will receive, under separate cover, links to preparatory
 <div class="day-card">
   <div class="day-card-header">Thursday, 16 July &mdash; Misinformation, propaganda and public opinion</div>
   <div class="day-card-row break">
-    <div class="day-card-time">08:00</div>
+    <div class="day-card-time">07:30–08:30</div>
     <div class="day-card-content">Morning pastries &amp; refreshments</div>
   </div>
   <div class="day-card-row">
@@ -573,7 +576,7 @@ Registered participants will receive, under separate cover, links to preparatory
 <div class="day-card">
   <div class="day-card-header">Friday, 17 July &mdash; Elections, polarization and democratic interventions</div>
   <div class="day-card-row break">
-    <div class="day-card-time">08:00</div>
+    <div class="day-card-time">07:30–08:30</div>
     <div class="day-card-content">Morning pastries &amp; refreshments</div>
   </div>
   <div class="day-card-row">
