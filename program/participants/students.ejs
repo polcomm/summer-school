@@ -44,6 +44,14 @@
     line-height: 1.25;
   }
 
+  .student-affiliation {
+    font-weight: 400;
+    font-size: 0.85rem;
+    margin: 0.1rem 0 0.2rem 0;
+    color: #495057;
+    line-height: 1.3;
+  }
+
   .student-icons {
     display: flex;
     flex-direction: row;
@@ -106,11 +114,19 @@
   <% for (const item of items) { %>
   <div class="student-card">
     <div class="student-header">
+      <% if (item.href) { %>
       <a href="<%- item.href %>" target="_blank" style="flex-shrink:0;display:block;">
         <img src="<%- item.thumbnail %>" alt="<%= item.name %> picture" style="width:80px;height:80px;border-radius:50%;object-fit:cover;display:block;margin:0;flex-shrink:0;" />
       </a>
+      <% } else { %>
+      <img src="<%- item.thumbnail %>" alt="<%= item.name %> picture" style="width:80px;height:80px;border-radius:50%;object-fit:cover;display:block;margin:0;flex-shrink:0;" />
+      <% } %>
       <div class="student-meta">
         <p class="student-name"><%= item.name %></p>
+        <% if (item.affiliation) { %>
+        <p class="student-affiliation"><%= item.affiliation %></p>
+        <% } %>
+        <% if (item.social) { %>
         <div class="student-icons">
           <% for (const tile of item.social) { %>
             <% if (tile.website) { %><a href="<%- tile.website %>" target="_blank"><i class="bi bi-globe"></i></a><% } %>
@@ -128,6 +144,7 @@
             <% if (tile.mastodon) { %><a href="<%- tile.mastodon %>" target="_blank"><i class="bi bi-mastodon"></i></a><% } %>
           <% } %>
         </div>
+        <% } %>
       </div>
     </div>
     <% if (item.bio) { %>
