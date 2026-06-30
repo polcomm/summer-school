@@ -197,8 +197,6 @@ td.empty { opacity: 0.15; text-align: center; vertical-align: middle; }
 :::
 
 ::: {.g-col-6 .text_block}
-All session times are in local time (Leeds, UK — BST / UTC+1).
-
 Registered participants will receive, under separate cover, links to preparatory readings, information about accommodations, and guidance on their afternoon presentations. Click [here](https://polcomm.github.io/summer-school/program/abstracts/) for all keynote and masterclass abstracts.
 
 :::
@@ -272,24 +270,15 @@ Registered participants will receive, under separate cover, links to preparatory
       <td class="time-col">09:30</td>
     </tr>
 
-    <!-- 10:00 — buffer row -->
+    <!-- 10:00 — Coffee & Careers (rowspan 3 = 10:00–11:30 all days, colspan 5) -->
     <tr>
       <td class="time-col">10:00</td>
-      <td class="break-row" colspan="5" style="opacity:0.2;">—</td>
-    </tr>
-
-    <!-- 10:30 — Coffee & Careers (rowspan 2 = 10:30–11:30 all days, colspan 5) -->
-    <tr>
-      <td class="time-col">10:30</td>
-      <td rowspan="2" colspan="5" class="event-generic"><strong>Coffee &amp; Careers</strong>
+      <td rowspan="3" colspan="5" class="event-generic"><strong>Coffee &amp; Careers</strong>
         <div class="talk-speaker">Patricia Moy &middot; University of Washington</div>
         <div class="talk-speaker">Eike Mark Rinke &middot; University of Leeds</div></td>
     </tr>
-
-    <!-- 11:00 — transition / buffer; covered by colspan+rowspan -->
-    <tr>
-      <td class="time-col">11:00</td>
-    </tr>
+    <tr><td class="time-col">10:30</td></tr>
+    <tr><td class="time-col">11:00</td></tr>
 
     <!-- 11:30 — Masterclass 2 all days (rowspan 3 = 11:30–13:00) -->
     <tr>
