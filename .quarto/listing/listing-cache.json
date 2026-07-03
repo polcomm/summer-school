@@ -1,43 +1,43 @@
 {
   "listingMap": {
-    "about/organizers.qmd": [
+    "about\\about.qmd": [
       "sponsors/sponsors.yml"
     ],
-    "about/sponsors/sponsors.qmd": [
-      "sponsors.yml"
-    ],
-    "about/sponsors/index.qmd": [
-      "sponsors.yml"
-    ],
-    "about/about.qmd": [
+    "about\\organizers.qmd": [
       "sponsors/sponsors.yml"
     ],
-    "participation/call.qmd": [
-      "../about/sponsors/sponsors.yml"
+    "about\\sponsors\\index.qmd": [
+      "sponsors.yml"
     ],
-    "participation/keydates/index.qmd": [
-      "keydates.yml"
+    "about\\sponsors\\sponsors.qmd": [
+      "sponsors.yml"
+    ],
+    "contact.qmd": [
+      "about/sponsors/sponsors.yml"
     ],
     "index.qmd": [
       "about/sponsors/sponsors.yml"
     ],
-    "program/schedule/index.qmd": [
-      "../../about/sponsors/sponsors.yml"
+    "participation\\call.qmd": [
+      "../about/sponsors/sponsors.yml"
     ],
-    "program/abstracts/index.qmd": [
+    "participation\\keydates\\index.qmd": [
+      "keydates.yml"
+    ],
+    "program\\abstracts\\index.qmd": [
       "abstracts.yml",
       "../../about/sponsors/sponsors.yml"
     ],
-    "program/participants/index.qmd": [
+    "program\\participants\\index.qmd": [
       "students.yml",
       "../../about/sponsors/sponsors.yml"
     ],
-    "program/speakers/index.qmd": [
-      "speakers.yml",
+    "program\\schedule\\index.qmd": [
       "../../about/sponsors/sponsors.yml"
     ],
-    "contact.qmd": [
-      "about/sponsors/sponsors.yml"
+    "program\\speakers\\index.qmd": [
+      "speakers.yml",
+      "../../about/sponsors/sponsors.yml"
     ]
   }
 }
