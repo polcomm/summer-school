@@ -1,6 +1,6 @@
 [
   {
-    "listing": "/program/speakers/index.html",
+    "listing": "/contact.html",
     "items": []
   },
   {
@@ -8,19 +8,15 @@
     "items": []
   },
   {
-    "listing": "/participation/call.html",
+    "listing": "/program/schedule/index.html",
     "items": []
   },
   {
-    "listing": "/contact.html",
+    "listing": "/index.html",
     "items": []
   },
   {
     "listing": "/about/sponsors/index.html",
-    "items": []
-  },
-  {
-    "listing": "/about/about.html",
     "items": []
   },
   {
@@ -32,7 +28,11 @@
     "items": []
   },
   {
-    "listing": "/index.html",
+    "listing": "/about/about.html",
+    "items": []
+  },
+  {
+    "listing": "/participation/call.html",
     "items": []
   },
   {
@@ -44,7 +44,7 @@
     "items": []
   },
   {
-    "listing": "/program/schedule/index.html",
+    "listing": "/program/speakers/index.html",
     "items": []
   }
 ]
