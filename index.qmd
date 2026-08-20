@@ -23,7 +23,7 @@ listing:
 ::: {#banner_small .g-col-12}
 :::
 
-::: {#countdown .g-col-12}
+::: {#countdown .g-col-12 style="display:none;"}
 :::
 
 ::: {.g-col-6 .text_block}
